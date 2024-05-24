@@ -106,7 +106,7 @@ export default function Component() {
   );
 }
 
-function CheckIcon(props) {
+function CheckIcon(props: any) {
   return (
     <svg
       {...props}
@@ -125,7 +125,7 @@ function CheckIcon(props) {
   );
 }
 
-function LocateIcon(props) {
+function LocateIcon(props: any) {
   return (
     <svg
       {...props}
@@ -148,7 +148,7 @@ function LocateIcon(props) {
   );
 }
 
-function MailIcon(props) {
+function MailIcon(props: any) {
   return (
     <svg
       {...props}
@@ -168,7 +168,7 @@ function MailIcon(props) {
   );
 }
 
-function PhoneIcon(props) {
+function PhoneIcon(props: any) {
   return (
     <svg
       {...props}
