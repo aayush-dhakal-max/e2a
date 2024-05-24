@@ -1,113 +1,223 @@
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/HW4fo6SZNZN
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+import Link from "next/link";
+import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
+import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import Image from "next/image";
+import Navbar from "@/components/component/Navbar";
+import Contact from "@/components/component/Contact";
 
-export default function Home() {
+export default function Component() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main className="flex flex-col w-[100vw]">
+      <Navbar />
+
+      {/* Main section */}
+      <section className="w-full py-20 bg-gray-100 dark:bg-gray-800">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl md:pb-4">
+                  Ace Your A-Levels with <br />
+                  <span className="text-[#C60B52]">E2A Learning Nepal</span>
+                </h1>
+                <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                  Get access to comprehensive course materials and past papers for all your A-level subjects.
+                  Boost your learning and exam performance with our expert-curated resources.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                  href="#"
+                >
+                  Explore Courses
+                </Link>
+                <Link
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                  href="#"
+                >
+                  Join Classes
+                </Link>
+              </div>
+            </div>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              alt="Hero"
+              className="mx-auto mt-32 aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last h-fit"
+              height="300"
+              src="https://generated.vusercontent.net/placeholder.svg"
+              width="200"
             />
-          </a>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section className="w-full py-20 bg-white dark:bg-gray-900" id="courses">
+        <div className="container px-4 md:px-6">
+          <div className="space-y-6">
+            <div className="space-y-2 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">A-Level Courses</h2>
+              <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl dark:text-gray-400">
+                Explore our comprehensive collection of A-level course materials and past papers.
+              </p>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Mathematics</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Ace your A-level Maths exams with our curated course materials and past papers.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Link
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#"
+                  >
+                    Explore Materials
+                  </Link>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Physics</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Unlock your potential in A-level Physics with our comprehensive resources.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Link
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#"
+                  >
+                    Explore Materials
+                  </Link>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Chemistry</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Conquer A-level Chemistry with our expertly curated course materials and past papers.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Link
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#"
+                  >
+                    Explore Materials
+                  </Link>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Biology</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Master A-level Biology with our comprehensive course materials and past papers.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Link
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#"
+                  >
+                    Explore Materials
+                  </Link>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full py-20 bg-gray-100 dark:bg-gray-800" id="testimonials">
+        <div className="container px-4 md:px-6">
+          <div className="space-y-6">
+            <div className="space-y-2 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                What Our Students Say
+              </h2>
+              <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl dark:text-gray-400">
+                Hear from our satisfied students about their experience with our A-level resources.
+              </p>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+              <Card>
+                <CardContent>
+                  <blockquote className="text-lg font-semibold leading-snug mt-6">
+                    “The course materials and past papers provided by this institution were invaluable in
+                    helping me ace my A-level exams. Highly recommended!”
+                  </blockquote>
+                </CardContent>
+                <CardFooter>
+                  <div className="flex items-center space-x-4">
+                    <Avatar>
+                      <AvatarImage src="/placeholder-avatar.svg" />
+                      <AvatarFallback>JD</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <div className="font-semibold">John Doe</div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
+                    </div>
+                  </div>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardContent>
+                  <blockquote className="text-lg font-semibold leading-snug mt-6">
+                    “I was struggling with A-level Physics, but the comprehensive course materials and past
+                    papers from this institution helped me turn things around. Highly recommended!”
+                  </blockquote>
+                </CardContent>
+                <CardFooter>
+                  <div className="flex items-center space-x-4">
+                    <Avatar>
+                      <AvatarImage src="/placeholder-avatar.svg" />
+                      <AvatarFallback>JA</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <div className="font-semibold">Jane Appleseed</div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
+                    </div>
+                  </div>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardContent>
+                  <blockquote className="text-lg font-semibold leading-snug mt-6">
+                    “The A-level course materials and past papers provided by this institution were
+                    instrumental in helping me achieve outstanding results. Highly recommended!”
+                  </blockquote>
+                </CardContent>
+                <CardFooter>
+                  <div className="flex items-center space-x-4">
+                    <Avatar>
+                      <AvatarImage src="/placeholder-avatar.svg" />
+                      <AvatarFallback>TS</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <div className="font-semibold">Tom Smith</div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
+                    </div>
+                  </div>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Contact />
     </main>
   );
 }
