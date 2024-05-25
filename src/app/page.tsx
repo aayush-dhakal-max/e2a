@@ -9,6 +9,7 @@ import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import Image from "next/image";
 import Navbar from "@/components/component/Navbar";
 import Contact from "@/components/component/Contact";
+import Testimonials from "@/components/component/Testimonials";
 
 export default function Component() {
   return (
@@ -141,82 +142,9 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <section className="w-full py-20 bg-gray-100 dark:bg-gray-800" id="testimonials">
-        <div className="container px-4 md:px-6">
-          <div className="space-y-6">
-            <div className="space-y-2 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                What Our Students Say
-              </h2>
-              <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl dark:text-gray-400">
-                Hear from our satisfied students about their experience with our A-level resources.
-              </p>
-            </div>
-            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-              <Card>
-                <CardContent>
-                  <blockquote className="text-lg font-semibold leading-snug mt-6">
-                    “The course materials and past papers provided by this institution were invaluable in
-                    helping me ace my A-level exams. Highly recommended!”
-                  </blockquote>
-                </CardContent>
-                <CardFooter>
-                  <div className="flex items-center space-x-4">
-                    <Avatar>
-                      <AvatarImage src="/placeholder-avatar.svg" />
-                      <AvatarFallback>JD</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-semibold">John Doe</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
-                    </div>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardContent>
-                  <blockquote className="text-lg font-semibold leading-snug mt-6">
-                    “I was struggling with A-level Physics, but the comprehensive course materials and past
-                    papers from this institution helped me turn things around. Highly recommended!”
-                  </blockquote>
-                </CardContent>
-                <CardFooter>
-                  <div className="flex items-center space-x-4">
-                    <Avatar>
-                      <AvatarImage src="/placeholder-avatar.svg" />
-                      <AvatarFallback>JA</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-semibold">Jane Appleseed</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
-                    </div>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardContent>
-                  <blockquote className="text-lg font-semibold leading-snug mt-6">
-                    “The A-level course materials and past papers provided by this institution were
-                    instrumental in helping me achieve outstanding results. Highly recommended!”
-                  </blockquote>
-                </CardContent>
-                <CardFooter>
-                  <div className="flex items-center space-x-4">
-                    <Avatar>
-                      <AvatarImage src="/placeholder-avatar.svg" />
-                      <AvatarFallback>TS</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-semibold">Tom Smith</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
-                    </div>
-                  </div>
-                </CardFooter>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <Testimonials />
+
       <Contact />
     </main>
   );

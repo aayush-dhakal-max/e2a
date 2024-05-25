@@ -30,35 +30,30 @@ const Navbar = () => {
           isScrolled ? "-translate-y-full" : "translate-y-0"
         } bg-white shadow-md w-full z-20 mt-4`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div></div>
-          <Image
-            alt="Students laughing"
-            className=""
-            height="80"
-            src="/logo.svg"
-            style={{
-              aspectRatio: "160/80",
-              objectFit: "cover",
-            }}
-            width="160"
-          />
-          <div className="flex space-x-4 px-3">
-            <FacebookIcon className="h-6 w-6 text-gray-800 hover:text-gray-600" />
-            <InstagramIcon className="h-6 w-6 text-gray-800 hover:text-gray-600" />
-            <LinkedinIcon className="h-6 w-6 text-gray-800 hover:text-gray-600" />
-          </div>
-        </div>
+          <a href="/" className="text-xl font-bold">
+            <Button variant={"outline"} className="bg-blue-300 size-26">
+              Enroll now
+            </Button>
+          </a>
+        </div> */}
       </div>
 
       <div className={` ${isScrolled ? "fixed" : "sticky"} top-0 bg-white shadow-md w-full z-10`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-xl font-bold">
-              <Button variant={"outline"} className="bg-blue-300 size-26">
-                Enroll now
-              </Button>
-            </a>
+            <Image
+              alt="Students laughing"
+              className=""
+              height="70"
+              src="/logo.svg"
+              style={{
+                aspectRatio: "110/70",
+                objectFit: "cover",
+              }}
+              width="110"
+            />
           </div>
           <div className="hidden md:flex space-x-4">
             <a
@@ -102,31 +97,33 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="/"
-              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
-            >
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-2xl">
+            <a href="/" className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">
               Home
             </a>
             <a
               href="/about"
-              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
             >
               About
             </a>
             <a
-              href="/courses"
-              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+              href="/pastpapers"
+              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
             >
-              Courses
+              Past Papers
             </a>
             <a
               href="/contact"
-              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
             >
               Contact
             </a>
+            <div className="flex space-x-4 px-3 py-5">
+              <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
+              <InstagramIcon className="h-6 w-6 text-purple-600 hover:text-gray-600" />
+              <LinkedinIcon className="h-6 w-6 text-blue-900 hover:text-gray-600" />
+            </div>
           </div>
         </div>
       </div>
