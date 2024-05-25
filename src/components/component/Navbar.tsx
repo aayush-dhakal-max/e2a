@@ -25,30 +25,57 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative  ">
       <a
         href="#enroll"
-        className=" z-40 fixed bottom-4 right-4 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-lg hover:bg-[#591f35] transition duration-900 animate-bounce"
+        className="md:hidden shadow-black outline-1 z-40 fixed bottom-3 right-12 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition duration-900 animate-bounce"
       >
         Enroll now
       </a>
-      <div
-        className={`transition-transform duration-500 ease-in-out ${
-          isScrolled ? "-translate-y-full" : "translate-y-0"
-        } bg-white shadow-md w-full z-20 mt-4`}
-      >
-        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div></div>
-          <a href="/" className="text-xl font-bold">
-            <Button variant={"outline"} className="bg-blue-300 size-26">
-              Enroll now
-            </Button>
-          </a>
-        </div> */}
-      </div>
 
-      <div className={` ${isScrolled ? "fixed" : "sticky"} top-0 bg-white shadow-md w-full z-10`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      {/* Desktop Device Navbar */}
+      <nav className="py-6 hidden md:flex flex-col justify-center items-center w-full bg-gray-50 shadow-md fixed top-0 z-50 md:px-16 lg:px-28">
+        {/* first row navbar */}
+        <div className="flex justify-between items-center w-full">
+          <div></div>
+          <Image
+            alt="Students laughing"
+            className="mx-auto rounded-lg"
+            height="60"
+            src="/logo.svg"
+            style={{
+              aspectRatio: "120/60",
+              objectFit: "cover",
+            }}
+            width="120"
+          />
+          <div className="flex space-x-4 py-">
+            <FacebookIcon className="h-5 w-5 text-gray-800 hover:text-gray-600" />
+            <InstagramIcon className="h-5 w-5 text-gray-800 hover:text-gray-600" />
+            <LinkedinIcon className="h-5 w-5 text-gray-800 hover:text-gray-600" />
+          </div>
+        </div>
+
+        {/* 2nd row navbar */}
+        <div className="flex justify-between items-center w-full border-gray-400 rounded-full border-2 p-4 px-6">
+          <div className=" space-x-10 text-lg ">
+            <Link className="text-gray-800 hover:text-gray-600" href="pastpapers">
+              PAST PAPERS
+            </Link>
+            <Link className="text-gray-800 hover:text-gray-600" href="about">
+              ABOUT US
+            </Link>
+            <Link className="text-gray-800 hover:text-gray-600" href="/">
+              HOME
+            </Link>
+          </div>
+          <div className="ml-4 text-[#C60B52] text-xl font-bold">ENROLL NOW</div>
+        </div>
+      </nav>
+
+      {/* Mobile Device Navbar */}
+      <div className={`fixed top-0 bg-white shadow-md w-full z-10`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between md:hidden">
           <div className="flex items-center">
             <Image
               alt="Students laughing"
@@ -62,32 +89,8 @@ const Navbar = () => {
               width="110"
             />
           </div>
-          <div className="hidden md:flex space-x-4">
-            <Link
-              href="/pastpapers"
-              className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Past Papers
-            </Link>
-            <Link
-              href="/about"
-              className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              About
-            </Link>
-            <Link
-              href="/"
-              className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Home
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Contact
-            </Link>
-          </div>
+
+          {/* Mobile Device */}
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleMenu}
