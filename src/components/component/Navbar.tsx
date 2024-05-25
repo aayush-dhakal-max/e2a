@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,6 +26,12 @@ const Navbar = () => {
 
   return (
     <div className="relative">
+      <a
+        href="#enroll"
+        className=" z-40 fixed bottom-4 right-4 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-lg hover:bg-[#591f35] transition duration-900 animate-bounce"
+      >
+        Enroll now
+      </a>
       <div
         className={`transition-transform duration-500 ease-in-out ${
           isScrolled ? "-translate-y-full" : "translate-y-0"
@@ -56,30 +63,30 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden md:flex space-x-4">
-            <a
+            <Link
               href="/pastpapers"
               className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
             >
               Past Papers
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
@@ -98,27 +105,30 @@ const Navbar = () => {
         </div>
         <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-2xl">
-            <a href="/" className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">
+            <Link
+              href="/"
+              className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
+            >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/pastpapers"
               className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
             >
               Past Papers
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md font-medium"
             >
               Contact
-            </a>
+            </Link>
             <div className="flex space-x-4 px-3 py-5">
               <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
               <InstagramIcon className="h-6 w-6 text-purple-600 hover:text-gray-600" />
