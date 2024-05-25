@@ -9,11 +9,11 @@ import Link from "next/link";
 
 export default function Component() {
   return (
-    <main className="container mx-auto px-4 py-12 md:px-6 lg:py-16 max-w-[800px]">
+    <main className="container mx-auto px-4 py-12 md:px-6 lg:py-16 max-w-[800px] mt-10 md:mt-32">
       <h1 className="mb-8 text-3xl font-bold tracking-tight md:text-4xl">Past Exam Papers</h1>
       <div className="space-y-6 ">
-        <Collapsible className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950 ">
-          <div className="flex items-center justify-between space-x-4">
+        <Collapsible className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950 ">
+          <div className="flex items-center justify-between space-x-4 ">
             <h2 className="text-lg font-semibold">Computer Science - 9618</h2>
             <CollapsibleTrigger asChild>
               <Button size="sm" variant="ghost">
@@ -84,7 +84,7 @@ export default function Component() {
             </Link>
           </CollapsibleContent>
         </Collapsible>
-        <Collapsible className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950">
+        <Collapsible className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950">
           <div className="flex items-center justify-between space-x-4">
             <h2 className="text-lg font-semibold">Mathematics</h2>
             <CollapsibleTrigger asChild>
@@ -156,7 +156,7 @@ export default function Component() {
             </Link>
           </CollapsibleContent>
         </Collapsible>
-        <Collapsible className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950">
+        <Collapsible className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950">
           <div className="flex items-center justify-between space-x-4">
             <h2 className="text-lg font-semibold">Biology</h2>
             <CollapsibleTrigger asChild>

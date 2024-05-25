@@ -13,7 +13,7 @@ import { CheckIcon } from "@radix-ui/react-icons";
 export default function Component() {
   return (
     <>
-      <section className="py-12 md:py-20 lg:py-24">
+      <section id="about" className="py-12 md:py-20 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
