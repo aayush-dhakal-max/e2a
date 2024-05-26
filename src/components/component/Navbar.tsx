@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative  ">
+    <div className="relative">
       <a
         href="#enroll"
         className="md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition duration-900 animate-bounce"
@@ -50,9 +50,9 @@ const Navbar = () => {
             width="120"
           />
           <div className="flex space-x-4 pr-5">
-            <FacebookIcon className="h-5 w-5 text-gray-800 hover:text-gray-600" />
-            <InstagramIcon className="h-5 w-5 text-gray-800 hover:text-gray-600" />
-            <LinkedinIcon className="h-5 w-5 text-gray-800 hover:text-gray-600" />
+            <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
+            <InstagramIcon className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
+            <LinkedinIcon className="h-6 w-6 text-blue-900 hover:text-gray-600" />
           </div>
         </div>
 
@@ -74,12 +74,12 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Device Navbar */}
-      <div className={`fixed top-0 bg-white shadow-md w-full z-10`}>
+      <div className={`fixed top-0 shadow-md w-full z-10 bg-white`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center md:hidden">
           <div className="flex items-center justify-center">
             <Image
               alt="Students laughing"
-              className="pt-1 -ml-6 m-auto"
+              className="pt-1 -ml-6 m-auto z-50"
               height="60"
               src="/logo.svg"
               style={{
@@ -107,8 +107,10 @@ const Navbar = () => {
         </div>
         <div
           className={`${
-            isOpen ? "opacity-100 transform translate-y-0" : "opacity-0 transform max-h-0 -translate-y-full"
-          } md:hidden transition-all duration-800 ease-in-out overflow-hidden`}
+            isOpen
+              ? "opacity-100 max-h-full transform translate-y-0 duration-1000"
+              : "opacity-0 transform max-h-0 -translate-y-full duration-700"
+          } md:hidden transition-all transition-max-height  ease-in-out overflow-hidden`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-2xl">
             <Link

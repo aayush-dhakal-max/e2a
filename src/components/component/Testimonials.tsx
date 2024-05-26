@@ -43,7 +43,7 @@ const Testimonials = () => {
               Hear from our satisfied students about their experience with our A-level resources.
             </p>
           </div>
-          <Carousel className="relative">
+          <Carousel className="relative ">
             <CarouselContent className="h-fit">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem
@@ -73,7 +73,7 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             {/* <CarouselPrevious /> */}
-            <CarouselNext className="" />
+            <CarouselNext className="absolute top-[47%] right-5 bg-[#001942] text-white animate-bounce duration-1000" />
           </Carousel>
         </div>
       </div>
