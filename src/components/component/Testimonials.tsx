@@ -73,7 +73,7 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             {/* <CarouselPrevious /> */}
-            <CarouselNext className="absolute top-[47%] right-5 bg-[#001942] text-white animate-bounce duration-1000" />
+            <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white md:animate-bounce duration-1000" />
           </Carousel>
         </div>
       </div>

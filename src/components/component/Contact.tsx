@@ -17,8 +17,10 @@ export default function Component() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                A-Level Tuition at Our Institute
+              <h2 className="text-3xl text-gray-600 font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                A-Level Tuition at <span className="text-[#001942]">E</span>
+                <span className="text-[#C60B52]">2</span>
+                <span className="text-[#001942]">A</span>
               </h2>
               <p className="mt-4 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Our A-Level tuition institute offers comprehensive and personalized support to help students
@@ -59,7 +61,9 @@ export default function Component() {
               </ul>
             </div>
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52]">
+                Get in Touch
+              </h2>
               <form className="mt-4 space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
