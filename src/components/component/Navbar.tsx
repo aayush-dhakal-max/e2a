@@ -30,7 +30,7 @@ const Navbar = () => {
         href="#enroll"
         className="md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition duration-900 animate-bounce"
       >
-        Enroll now
+        Enroll Now
       </a>
 
       {/* Desktop Device Navbar */}
@@ -105,7 +105,11 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
+        <div
+          className={`${
+            isOpen ? "opacity-100 transform translate-y-0" : "opacity-0 transform max-h-0 -translate-y-full"
+          } md:hidden transition-all duration-800 ease-in-out overflow-hidden`}
+        >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-2xl">
             <Link
               href="/"
