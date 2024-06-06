@@ -25,13 +25,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <a
+    <div className="relative md:mb-32 mb-16">
+      {/* <a
         href="#enroll"
         className="md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition duration-900 animate-bounce"
       >
         Enroll Now
-      </a>
+      </a> */}
 
       {/* Desktop Device Navbar */}
       <nav className="py-6 hidden md:flex flex-col justify-center items-center w-full bg-gray-50 shadow-md fixed top-0 z-50 md:px-16 lg:px-28">

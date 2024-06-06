@@ -1,33 +1,41 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[80vh] min-h-[500px] sm:min-h-[400px] overflow-hidden mt-16 md:mt-28">
-      <Image
-        alt="Hero Background"
-        className="object-cover object-center w-full h-full"
-        layout="fill"
-        src="/hero.webp"
-      />
-      <div className="absolute inset-0 bg-gradient-to-l from-gray-900/20 to-transparent"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 to-transparent"></div>
-      <div className="absolute top-1/2 left-4 -translate-y-1/2 max-w-xl space-y-4 sm:left-16 md:left-20 lg:left-24">
-        <h1 className="text-5xl sm:text-5xl italic font-bold tracking-tight text-white md:text-5xl lg:text-5xl xl:text-6xl">
-          <div className="mb-4">lets learn beyond</div>
-          <div className="text-[#C60B52] mt-4">the limit</div>
+    <section className="w-full min-h-[80vh] py-24 md:py-24 lg:py-16 bg-gradient-to-r sfrom-[#001942] sto-[#C60B52]">
+      <div className="container px-4 md:px-6 text-center space-y-6">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl ">
+          Unlock Your Potential with <br /> <span className="text-[#001942]">E</span>
+          <span className="text-[#C60B52]">2</span>
+          <span className="text-[#001942]">A</span> Learning Nepal
         </h1>
-        <p className="text-lg text-gray-300 sm:text-xl md:py-3 md:text-2xl">
+        <p className="text-lg md:text-xl lg:text-xl max-w-3xl mx-auto">
           Empowering A-Level students with expert guidance, comprehensive resources, and a path to academic
           excellence.
         </p>
-        <div className="flex items-center space-x-4">
-          <Button variant="secondary" size={"lg"}>
-            Contact Us
-          </Button>
-          <Button variant="default" size={"lg"}>
-            Get In Touch
-          </Button>
+        <div className="py-8">
+          <Link
+            href="#"
+            className="inline-flex  items-center justify-center rounded-2xl bg-[#C60B52] px-5 py-2 text-white text-xl md:text-2xl font-medium shadow-sm hover:bg-[#772947] focus:outline-none "
+            prefetch={false}
+          >
+            Enroll Now
+          </Link>
+        </div>
+        <div className="">
+          <Image
+            alt="Students laughing"
+            className="mx-auto rounded-lg"
+            height="500"
+            src="/about.svg"
+            style={{
+              aspectRatio: "1400/500",
+              objectFit: "cover",
+            }}
+            width="1400"
+          />
         </div>
       </div>
     </section>
