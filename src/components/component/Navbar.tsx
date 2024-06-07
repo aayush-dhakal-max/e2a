@@ -15,26 +15,27 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const showAfterYpos = 420; // Change this value to the Y position at which you want to show the element
+      setIsScrolled(window.pageYOffset > showAfterYpos);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="relative md:mb-32 mb-16">
-      {/* <a
+      <a
         href="#enroll"
-        className="md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition duration-900 animate-bounce"
+        className={`${
+          isScrolled ? "block" : "hidden"
+        } md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
       >
         Enroll Now
-      </a> */}
+      </a>
 
       {/* Desktop Device Navbar */}
-      <nav className="py-6 hidden md:flex flex-col justify-center items-center w-full bg-gray-50 shadow-md fixed top-0 z-50 md:px-16 lg:px-28">
+      <nav className="py-6 hidden md:flex flex-col justify-center items-center w-full bg-gray-50 shadow-md fixed top-0 z-50 md:px-32 lg:px-48">
         {/* first row navbar */}
         <div className="flex justify-between items-center w-full">
           <div></div>
@@ -58,7 +59,7 @@ const Navbar = () => {
 
         {/* 2nd row navbar */}
         <div className="flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-4 px-6">
-          <div className=" md:space-x-6 lg:space-x-8 text-lg font-bold ">
+          <div className=" md:space-x-4 lg:space-x-6 xl:space-x-10 text-lg font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="pastpapers">
               PAST PAPERS
             </Link>

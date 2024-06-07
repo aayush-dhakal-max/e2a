@@ -32,7 +32,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full py-20 bg-gray-100 dark:bg-gray-800" id="testimonials">
+    <section className="w-full py-20 bg-gray-50 dark:bg-gray-800" id="testimonials">
       <div className="container px-4 md:px-6">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
