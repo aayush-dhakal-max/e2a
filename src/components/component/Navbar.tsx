@@ -70,7 +70,7 @@ const Navbar = () => {
               HOME
             </Link>
           </div>
-          <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold">
+          <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold hover:cursor-pointer transition-all duration-900 bg-gradient-to-r to-[#001942] from-[#C60B52]">
             ENROLL NOW
           </div>
         </div>
