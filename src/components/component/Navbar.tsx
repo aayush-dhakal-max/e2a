@@ -38,7 +38,7 @@ const Navbar = () => {
       <nav className="pt-4 hidden md:flex flex-col justify-center items-center w-full bg-gray-50  fixed top-0 z-50 md:px-24 lg:px-56">
         {/* first row navbar */}
         <div className="flex justify-between items-center w-full">
-          <div className="w-25 h-12"></div>
+          <div className="w-28 h-12"></div>
           <Image
             alt="Students laughing"
             className="mx-auto rounded-lg"
