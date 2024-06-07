@@ -40,7 +40,7 @@ const Testimonials = () => {
               What Our Students Say
             </h2>
             <p className="max-w-[700px] mx-auto text-[#001942] md:text-xl dark:text-gray-400">
-              Hear from our satisfied students about their experience with our A-level resources.
+              Hear from our satisfied students about their experience with our A-level courses.
             </p>
           </div>
           <Carousel className="relative ">
@@ -73,7 +73,7 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             {/* <CarouselPrevious /> */}
-            <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white md:animate-bounce duration-1000" />
+            <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white animate-bounce duration-1000" />
           </Carousel>
         </div>
       </div>

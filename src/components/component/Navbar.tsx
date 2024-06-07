@@ -35,7 +35,7 @@ const Navbar = () => {
       </a>
 
       {/* Desktop Device Navbar */}
-      <nav className="py-6 hidden md:flex flex-col justify-center items-center w-full bg-gray-50 shadow-md fixed top-0 z-50 md:px-32 lg:px-48">
+      <nav className="pt-4 hidden md:flex flex-col justify-center items-center w-full bg-gray-50  fixed top-0 z-50 md:px-24 lg:px-56">
         {/* first row navbar */}
         <div className="flex justify-between items-center w-full">
           <div></div>
@@ -58,36 +58,38 @@ const Navbar = () => {
         </div>
 
         {/* 2nd row navbar */}
-        <div className="flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-4 px-6">
-          <div className=" md:space-x-4 lg:space-x-6 xl:space-x-10 text-lg font-bold ">
+        <div className="flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-3 px-4">
+          <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-lg font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="pastpapers">
               PAST PAPERS
             </Link>
-            <Link className="text-gray-800 hover:text-gray-600" href="#about">
+            <Link className="text-gray-800 hover:text-gray-600" href="#">
               ABOUT US
             </Link>
             <Link className="text-gray-800 hover:text-gray-600" href="/">
               HOME
             </Link>
           </div>
-          <div className="ml-4 text-[#C60B52] text-xl font-bold">ENROLL NOW</div>
+          <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold">
+            ENROLL NOW
+          </div>
         </div>
       </nav>
 
       {/* Mobile Device Navbar */}
       <div className={`fixed top-0 shadow-md w-full z-10 bg-white`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center md:hidden">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center  h-full">
             <Image
               alt="Students laughing"
               className="pt-1 -ml-6 m-auto z-50"
-              height="60"
+              height="80"
               src="/logo.svg"
               style={{
-                aspectRatio: "120/60",
+                aspectRatio: "160/80",
                 objectFit: "cover",
               }}
-              width="120"
+              width="160"
             />
           </div>
 
@@ -121,7 +123,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="#about"
+              href="/#"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
             >
               About
@@ -133,7 +135,7 @@ const Navbar = () => {
               Past Papers
             </Link>
             <Link
-              href="/contact"
+              href="/#"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
             >
               Contact

@@ -1,10 +1,12 @@
 import Navbar from "@/components/component/Navbar";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Libre_Franklin } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-// import "../globals.css";
-
+const libre_franklin = Libre_Franklin({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-libre_franklin",
+});
 export const metadata: Metadata = {
   title: "A Levels Past Papers",
   description: "Past papers for A Level students. Get access to past papers for A Level subjects.",
@@ -20,8 +22,8 @@ export default function RootLayout({
       <head>
         <title>Past Papers</title>
       </head>
-      <body className={inter.className}>
-        <Navbar />
+      <body className={libre_franklin.variable}>
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
