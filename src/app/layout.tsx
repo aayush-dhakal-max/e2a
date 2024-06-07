@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "E2A Nepal",
   description:
     "Empowering A-Level students with expert guidance, comprehensive resources, and a path to academic excellence.",
-  viewport: "width=device-width, initial-scale=1.0",
+  // viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({

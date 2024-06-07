@@ -10,7 +10,7 @@ const libre_franklin = Libre_Franklin({
 export const metadata: Metadata = {
   title: "A Levels Past Papers",
   description: "Past papers for A Level students. Get access to past papers for A Level subjects.",
-  viewport: "width=device-width, initial-scale=1.0",
+  // viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
