@@ -51,9 +51,18 @@ const Navbar = () => {
             width="120"
           />
           <div className="flex space-x-4 pr-5">
-            <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
-            <InstagramIcon className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
-            <LinkedinIcon className="h-6 w-6 text-blue-900 hover:text-gray-600" />
+            <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
+              <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
+            </Link>
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/e2alearningnepal1.0?igsh=MXMxNzJmemw1bTZuNw=="}
+            >
+              <InstagramIcon className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
+            </Link>
+            <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
+              <LinkedinIcon className="h-6 w-6 text-blue-900 hover:text-gray-600" />
+            </Link>
           </div>
         </div>
 
@@ -141,9 +150,18 @@ const Navbar = () => {
               Contact
             </Link>
             <div className="flex space-x-4 px-3 py-5">
-              <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
-              <InstagramIcon className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
-              <LinkedinIcon className="h-6 w-6 text-blue-900 hover:text-gray-600" />
+              <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
+                <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://www.instagram.com/e2alearningnepal1.0?igsh=MXMxNzJmemw1bTZuNw=="}
+              >
+                <InstagramIcon className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
+              </Link>
+              <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
+                <LinkedinIcon className="h-6 w-6 text-blue-900 hover:text-gray-600" />
+              </Link>
             </div>
           </div>
         </div>
