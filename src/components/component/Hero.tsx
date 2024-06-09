@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import ADContent from "@/components/component/AlertDialogContent";
+import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 
 export function Hero() {
   return (
@@ -17,13 +19,18 @@ export function Hero() {
             excellence.
           </p>
           <div className="md:py-0 py-6">
-            <Link
-              href="#"
-              className="md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-xl py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] focus:outline-none "
-              prefetch={false}
-            >
-              Enroll Now
-            </Link>
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Link
+                  href="#"
+                  className="md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-xl py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] focus:outline-none "
+                  prefetch={false}
+                >
+                  Enroll Now
+                </Link>
+              </AlertDialogTrigger>
+              <ADContent />
+            </AlertDialog>
           </div>
         </div>
         <div className="md:h-1/2">

@@ -24,7 +24,7 @@ export default function RootLayout({
         <title>Past Papers</title>
       </head>
       <body className={libre_franklin.variable}>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
       </body>
     </html>

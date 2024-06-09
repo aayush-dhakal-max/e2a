@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import ADContent from "@/components/component/AlertDialogContent";
+import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -25,14 +26,19 @@ const Navbar = () => {
 
   return (
     <div className="relative md:mb-32 mb-16">
-      <a
-        href="#enroll"
-        className={`${
-          isScrolled ? "block" : "hidden"
-        } md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
-      >
-        Enroll Now
-      </a>
+      <AlertDialog>
+        <AlertDialogTrigger asChild>
+          <a
+            href="#enroll"
+            className={`${
+              isScrolled ? "block" : "hidden"
+            } md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
+          >
+            Enroll Now
+          </a>
+        </AlertDialogTrigger>
+        <ADContent />
+      </AlertDialog>
 
       {/* Desktop Device Navbar */}
       <nav className="pt-4 hidden md:flex flex-col justify-center items-center w-full bg-gray-50  fixed top-0 z-50 md:px-24 lg:px-56">
@@ -78,10 +84,18 @@ const Navbar = () => {
             <Link className="text-gray-800 hover:text-gray-600" href="/">
               HOME
             </Link>
+            <Link className="text-gray-800 hover:text-gray-600" href="/pdfviewer">
+              View pdf
+            </Link>
           </div>
-          <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold hover:cursor-pointer transition-all duration-900 bg-gradient-to-r to-[#001942] from-[#C60B52]">
-            ENROLL NOW
-          </div>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold hover:cursor-pointer transition-all duration-900 bg-gradient-to-r to-[#001942] from-[#C60B52]">
+                ENROLL NOW
+              </div>
+            </AlertDialogTrigger>
+            <ADContent />
+          </AlertDialog>
         </div>
       </nav>
 
