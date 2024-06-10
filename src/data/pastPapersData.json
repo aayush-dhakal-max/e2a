@@ -3,124 +3,114 @@
         "subject": "Computer Science - 9618",
         "papers": [
             {
-                "year": "2022 - November",
+                "year": "2023 - May/June",
                 "href": "#"
             },
             {
-                "year": "2021 - May",
+                "year": "2023 - Oct/Nov",
                 "href": "#"
             },
             {
-                "year": "2020 - June",
+                "year": "2022 - May/June",
                 "href": "#"
             },
             {
-                "year": "2019 - July",
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
                 "href": "#"
             }
         ]
     },
     {
-        "subject": "Physics",
+        "subject": "Chemistry - 9701",
         "papers": [
             {
-                "year": "2022 - January",
+                "year": "2023 - May/June",
                 "href": "#"
             },
             {
-                "year": "2021 - July",
+                "year": "2023 - Oct/Nov",
                 "href": "#"
             },
             {
-                "year": "2020",
+                "year": "2022 - May/June",
                 "href": "#"
             },
             {
-                "year": "2019 - December",
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
                 "href": "#"
             }
         ]
     },
     {
-        "subject": "Mathematics",
+        "subject": "Mathematics - 9709",
         "papers": [
             {
-                "year": "2022",
+                "year": "2023 - May/June",
                 "href": "#"
             },
             {
-                "year": "2021",
+                "year": "2023 - Oct/Nov",
                 "href": "#"
             },
             {
-                "year": "2020",
+                "year": "2022 - May/June",
                 "href": "#"
             },
             {
-                "year": "2019",
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
                 "href": "#"
             }
         ]
     },
     {
-        "subject": "Economics",
+        "subject": "Physics - 9702",
         "papers": [
             {
-                "year": "2022",
+                "year": "2023 - May/June",
                 "href": "#"
             },
             {
-                "year": "2021",
+                "year": "2023 - Oct/Nov",
                 "href": "#"
             },
             {
-                "year": "2020",
+                "year": "2022 - May/June",
                 "href": "#"
             },
             {
-                "year": "2019",
-                "href": "#"
-            }
-        ]
-    },
-    {
-        "subject": "Biology",
-        "papers": [
-            {
-                "year": "2022",
+                "year": "2022 - Oct/Nov",
                 "href": "#"
             },
             {
-                "year": "2021",
+                "year": "2021 - May/June",
                 "href": "#"
             },
             {
-                "year": "2020",
-                "href": "#"
-            },
-            {
-                "year": "2019",
-                "href": "#"
-            }
-        ]
-    },
-    {
-        "subject": "Chemistry",
-        "papers": [
-            {
-                "year": "2022",
-                "href": "#"
-            },
-            {
-                "year": "2021",
-                "href": "#"
-            },
-            {
-                "year": "2020",
-                "href": "#"
-            },
-            {
-                "year": "2019",
+                "year": "2021 - Oct/Nov",
                 "href": "#"
             }
         ]

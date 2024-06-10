@@ -9,27 +9,27 @@ export default function Component() {
     <>
       <Navbar />
       <main className="container mx-auto px-4 py-12 md:px-6 lg:py-16 max-w-[800px] mt-10 md:mt-32">
-        <h1 className="mb-8 text-3xl font-bold tracking-tight md:text-4xl">Past Exam Papers</h1>
+        <h1 className="mb-8 text-4xl font-bold tracking-tight md:text-4xl">Past Exam Papers</h1>
         <div className="space-y-6">
           {pastPapersData.map((subjectData, index) => (
             <Collapsible
               key={index}
               className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950"
             >
-              <CollapsibleTrigger asChild className="hover:cursor-pointer">
+              <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
                 <div className="flex items-center justify-between space-x-4">
-                  <h2 className="text-lg font-semibold">{subjectData.subject}</h2>
+                  <h2 className="text-xl font-semibold">{subjectData.subject}</h2>
                   <Button size="sm" variant="ghost">
                     <ChevronDownIcon className="h-6 w-6 transition-transform [&[data-state=open]]:rotate-180" />
                   </Button>
                 </div>
               </CollapsibleTrigger>
 
-              <CollapsibleContent className="mt-4 grid gap-2 CollapsibleContent">
+              <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
                 {subjectData.papers.map((paper, paperIndex) => (
                   <Link
                     key={paperIndex}
-                    className="rounded-md bg-gray-300 px-3 py-2 text-sm font-medium transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                    className="rounded-md bg-gray-300 px-3 py-3 text-sm font-medium transition-colors hover:bg-gray-800 hover:text-white"
                     href={paper.href}
                   >
                     {paper.year}
