@@ -84,9 +84,9 @@ const Navbar = () => {
             <Link className="text-gray-800 hover:text-gray-600" href="/">
               HOME
             </Link>
-            <Link className="text-gray-800 hover:text-gray-600" href="/pdfviewer">
+            {/* <Link className="text-gray-800 hover:text-gray-600" href="/pdfviewer">
               View pdf
-            </Link>
+            </Link> */}
           </div>
           <AlertDialog>
             <AlertDialogTrigger asChild>
@@ -100,19 +100,19 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Device Navbar */}
-      <div className={`fixed top-0 shadow-md w-full z-10 bg-white`}>
+      <div className={`fixed top-0 shadow-md w-full z-10 bg-gray-50`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center md:hidden">
-          <div className="flex items-center justify-center  h-full">
+          <div className="flex items-center justify-center h-full">
             <Image
               alt="Students laughing"
               className="pt-1 -ml-6 m-auto z-50"
-              height="80"
+              height="70"
               src="/logo.svg"
               style={{
-                aspectRatio: "160/80",
+                aspectRatio: "140/70",
                 objectFit: "cover",
               }}
-              width="160"
+              width="140"
             />
           </div>
 
