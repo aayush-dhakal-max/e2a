@@ -39,8 +39,8 @@ const papers = [
 
 export default function Component() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-6 p-4 md:p-6 h-[82vh]">
-      <div className="bg-gray-100 dark:bg-gray-950 rounded-lg overflow-hidden md:block hidden">
+    <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-6 p-4 md:p-6 h-[100vh]">
+      <div className="bg-gray-100 dark:bg-gray-950 rounded-lg overflow-hidden">
         <ScrollArea className="h-[calc(100vh-128px)]">
           <div className="p-4 space-y-2">
             {papers.map((paper) => (
@@ -61,7 +61,7 @@ export default function Component() {
           </div>
         </ScrollArea>
       </div>
-      <div className="bg-gray-100 dark:bg-gray-950 rounded-lg overflow-hidden">
+      <div className="bg-gray-100 dark:bg-gray-950 rounded-lg overflow-hidden md:block hidden">
         <div className="h-[calc(100vh-128px)] w-full">
           <iframe
             src={`https://drive.google.com/file/d/1gKzEZ6bqqXoggJBHGUnyy6Dka3CYkXBO/preview?usp=sharing`}
