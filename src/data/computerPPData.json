@@ -1,0 +1,70 @@
+[
+    {
+        "subject": "Paper 1 - Theory Fundamentals",
+        "exams": [
+            {
+                "name": "Question Paper 11",
+                "href": "https://drive.google.com/file/d/1FCGz8XY2oOVzvsaCkd4H9Vs-WHYfICyb/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 12",
+                "href": "https://drive.google.com/file/d/1HlgDSaBUa5OjaqHfsEeNS7IRCFHJ1Hss/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 13",
+                "href": "https://drive.google.com/file/d/1UOsLHcZ6c1oG2wEW0hHHcyztp5XtlSR4/preview?usp=drive_link"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 2 - Fundamental Problem-solving and Programming Skills",
+        "exams": [
+            {
+                "name": "Question Paper 21",
+                "href": "https://drive.google.com/file/d/1yjO15hDvAPBBmA77Z4PMfqUTe3Z9nJef/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 22",
+                "href": "https://drive.google.com/file/d/15wCzJ1GHjSb4G9r0Bu7aSevv71sOLzex/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 23",
+                "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 3 - Advanced Theory",
+        "exams": [
+            {
+                "name": "Question Paper 31",
+                "href": "https://drive.google.com/file/d/1lPJBFJSX5ruKvqfmwO3GZkIQ1RXk-vZB/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 32",
+                "href": "https://drive.google.com/file/d/1yILiJaumGJ4BlaQtZ7wlUrUtrMi4OrX9/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 33",
+                "href": "https://drive.google.com/file/d/1ycmQS-ggeiSaACrP2P0mP1wTsIdYpS5N/preview?usp=drive_link"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 4 - Practical",
+        "exams": [
+            {
+                "name": "Question Paper 41",
+                "href": "https://drive.google.com/file/d/1Nu1qE0SSjzXHqaNBOdTk_kWJ9E4RioWd/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 42",
+                "href": "https://drive.google.com/file/d/1JhUXMy76FuOb1Pa3fCzSnmPwfvNQmzNl/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 43",
+                "href": "https://drive.google.com/file/d/1rljUOauJxz_fOs3E4Daqyllz3SE7iVld/preview?usp=drive_link"
+            }
+        ]
+    }
+]
