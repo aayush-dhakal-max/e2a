@@ -17,7 +17,7 @@
         ]
     },
     {
-        "subject": "Paper 2 - Fundamental Problem-solving and Programming Skills",
+        "subject": "Paper 2 - Programming Skills",
         "exams": [
             {
                 "name": "Question Paper 21",
@@ -47,6 +47,40 @@
             {
                 "name": "Question Paper 33",
                 "href": "https://drive.google.com/file/d/1ycmQS-ggeiSaACrP2P0mP1wTsIdYpS5N/preview?usp=drive_link"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 4 - Practical",
+        "exams": [
+            {
+                "name": "Question Paper 41",
+                "href": "https://drive.google.com/file/d/1Nu1qE0SSjzXHqaNBOdTk_kWJ9E4RioWd/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 42",
+                "href": "https://drive.google.com/file/d/1JhUXMy76FuOb1Pa3fCzSnmPwfvNQmzNl/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 43",
+                "href": "https://drive.google.com/file/d/1rljUOauJxz_fOs3E4Daqyllz3SE7iVld/preview?usp=drive_link"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 4 - Practical",
+        "exams": [
+            {
+                "name": "Question Paper 41",
+                "href": "https://drive.google.com/file/d/1Nu1qE0SSjzXHqaNBOdTk_kWJ9E4RioWd/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 42",
+                "href": "https://drive.google.com/file/d/1JhUXMy76FuOb1Pa3fCzSnmPwfvNQmzNl/preview?usp=drive_link"
+            },
+            {
+                "name": "Question Paper 43",
+                "href": "https://drive.google.com/file/d/1rljUOauJxz_fOs3E4Daqyllz3SE7iVld/preview?usp=drive_link"
             }
         ]
     },

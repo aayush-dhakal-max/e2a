@@ -1,3 +1,4 @@
+"use client";
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/HW4fo6SZNZN
@@ -11,13 +12,13 @@ import Navbar from "@/components/component/Navbar";
 import Contact from "@/components/component/Contact";
 import Testimonials from "@/components/component/Testimonials";
 import { Hero } from "@/components/component/Hero";
+import Sidebar from "@/components/component/Sidebar";
 
 export default function Component() {
   return (
     <main className="flex flex-col w-full">
       <Navbar />
       <Hero />
-      {/* </section> */}
       <section className="w-full py-20 bg-white dark:bg-gray-900" id="courses">
         <div className="container px-4 md:px-6">
           <div className="space-y-6">
