@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import ADContent from "@/components/component/AlertDialogContent";
+import ADContent from "@/components/component/EnrollDialogContent";
 import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 
 export function Hero() {
@@ -18,6 +18,8 @@ export function Hero() {
             Empowering A-Level students with expert guidance, comprehensive resources, and a path to academic
             excellence.
           </p>
+
+          {/* Enroll now button in hero section */}
           <div className="md:py-0 py-6">
             <AlertDialog>
               <AlertDialogTrigger asChild>

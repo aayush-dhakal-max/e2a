@@ -16,7 +16,7 @@ import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@
 
 export default function Component() {
   return (
-    <AlertDialogContent className="sm:max-w-[500px] mx-2 m-auto rounded-sm">
+    <AlertDialogContent className="sm:max-w-[500px] w-[92vw] mx-2 m-auto rounded-sm">
       <AlertDialogHeader>
         <AlertDialogTitle>Enroll in Our Tuition Institute</AlertDialogTitle>
         <AlertDialogDescription>

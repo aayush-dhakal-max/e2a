@@ -4,10 +4,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { useState } from "react";
 import papers from "@/data/computerPPData.json";
-import Sidebar from "@/components/component/Sidebar";
-import MyDrawer from "@/components/component/MyDrawer";
-import { Button } from "@/components/ui/button";
-import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 import {
   Drawer,
@@ -28,17 +25,7 @@ export default function Component() {
 
   return (
     <div className="md:mx-12 p-4">
-      {/* <MyDrawer /> */}
       <div className="grid grid-cols-1 md:grid-cols-[25vw_1fr] sm:grid-cols-1 lg:grid-cols-1[20vw_1fr] gap-6  h-max ">
-        {/* <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="md:hidden z-30 mb "
-        > */}
-        {/* <span className="sr-only">Toggle navigation</span>
-        </Button> */}
-
         {/* Mobile view */}
         <div className="md:hidden block">
           <Drawer direction="left">
@@ -47,7 +34,7 @@ export default function Component() {
             </DrawerTrigger>
             <DrawerPortal>
               <DrawerOverlay className="fixed inset-0 bg-black/5" />
-              <DrawerContent className="bg-white flex flex-col h-full w-[400px] max-w-[80vw] mt-24 fixed bottom-0 right-0">
+              <DrawerContent className="bg-white flex flex-col h-full w-[400px] max-w-[70vw] mt-24 fixed bottom-0 right-0">
                 <div className="p-2 md:p-4 bg-white flex-1 h-full ">
                   <ScrollArea className="h-full md:border-none rounded-lg drop-shadow-lg border-black md:border-2 ">
                     <div className="p-2 md:p-4 space-y-2 bg-gray-200">
@@ -83,7 +70,7 @@ export default function Component() {
         {/* Desktop view */}
         <div className={`rounded-lg overflow-hidden md:block hidden`}>
           <ScrollArea className="h-[calc(100vh-160px)] drop-shadow-lg border-black rounded-lg">
-            <div className="p-4 space-y-2 bg-gray-200">
+            <div className="p-4 space-y-2 bg-gray-100">
               {papers.map((paper) => (
                 <div key={paper.subject}>
                   <h3 className="text-lg font-medium text-[#C60B52] mb-2">{paper.subject}</h3>

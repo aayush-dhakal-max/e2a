@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import ADContent from "@/components/component/AlertDialogContent";
+import ADContent from "@/components/component/EnrollDialogContent";
 import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 import Link from "next/link";
 
