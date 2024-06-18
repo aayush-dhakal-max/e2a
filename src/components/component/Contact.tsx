@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 export default function Component() {
   const [name, setName] = useState("");
-  const [receiver, setReceiver] = useState("");
+  const [sender, setSender] = useState("");
   const [message, setMessage] = useState("");
 
   const sendMail = async (e: any) => {
@@ -21,15 +21,15 @@ export default function Component() {
         "content-type": "application/json",
       },
       body: JSON.stringify({
-        subject: "Send Email TEST with Gmail and Nextjs",
+        subject: "Student Enquiry from E2A Tuition Website",
         name,
-        receiver,
+        senderMail: sender,
         message,
       }),
     });
     console.log(response.status, await response.json());
     if (response.status === 200) {
-      toast.success("Email Sent Successfully");
+      toast.success("Email Sent Successfully", { duration: 5000, position: "top-center" });
     } else {
       toast.error("Failed to send email", { duration: 5000, position: "top-center" });
     }
@@ -92,6 +92,7 @@ export default function Component() {
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
                     <Input
+                      required
                       value={name}
                       onChange={(e) => {
                         setName(e.target.value);
@@ -103,9 +104,10 @@ export default function Component() {
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
                     <Input
-                      value={receiver}
+                      required
+                      value={sender}
                       onChange={(e) => {
-                        setReceiver(e.target.value);
+                        setSender(e.target.value);
                       }}
                       id="email"
                       placeholder="Enter your email"
@@ -116,6 +118,7 @@ export default function Component() {
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
                   <Textarea
+                    required
                     value={message}
                     onChange={(e) => {
                       setMessage(e.target.value);

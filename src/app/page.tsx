@@ -1,9 +1,4 @@
 "use client";
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/HW4fo6SZNZN
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link";
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
@@ -108,7 +103,7 @@ export default function Component() {
       </section>
       <Testimonials />
       <Contact />
-      <Toaster />
+      <Toaster richColors />
     </main>
   );
 }

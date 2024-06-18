@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
   try {
-    const { receiver, name, subject, message } = await request.json();
+    const { senderMail, name, subject, message } = await request.json();
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -17,8 +17,8 @@ export async function POST(request: NextRequest) {
     });
 
     const mailOption = {
-      from: process.env.NEXT_PRRIVATE_USERNAME,
-      to: receiver,
+      from: "E2A Tuition Website",
+      to: process.env.NEXT_PRIVATE_RECEIVER,
       subject: "Student Enquiry from E2A Tuition Website",
       html: `
         <html>
@@ -62,6 +62,7 @@ export async function POST(request: NextRequest) {
                 <h2>Student Enquiry</h2>
                 <ul>
                   <li><strong>Name:</strong> ${name}</li>
+                  <li><strong>Sender Mail:</strong> ${senderMail}</li>
                   <li><strong>Title:</strong> ${subject}</li>
                   <li><strong>Message:</strong> ${message}</li>
                 </ul>
