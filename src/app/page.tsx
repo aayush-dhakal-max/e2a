@@ -13,6 +13,7 @@ import Contact from "@/components/component/Contact";
 import Testimonials from "@/components/component/Testimonials";
 import { Hero } from "@/components/component/Hero";
 import Sidebar from "@/components/component/Sidebar";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function Component() {
   return (
@@ -107,6 +108,7 @@ export default function Component() {
       </section>
       <Testimonials />
       <Contact />
+      <Toaster />
     </main>
   );
 }

@@ -26,19 +26,20 @@ const Navbar = () => {
 
   return (
     <div className="relative md:mb-32 mb-16">
-      <AlertDialog>
-        <AlertDialogTrigger asChild>
-          <a
-            href="#enroll"
-            className={`${
-              isScrolled ? "block" : "hidden"
-            } md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
-          >
-            Enroll Now
-          </a>
-        </AlertDialogTrigger>
+      {/* <AlertDialog>
+        <AlertDialogTrigger asChild> */}
+      <Link
+        target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
+        className={`${
+          isScrolled ? "block" : "hidden"
+        } md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
+      >
+        Enroll Now
+      </Link>
+      {/* </AlertDialogTrigger>
         <ADContent />
-      </AlertDialog>
+      </AlertDialog> */}
 
       {/* Desktop Device Navbar */}
       <nav className="pt-4 hidden md:flex flex-col justify-center items-center w-full bg-gray-50  fixed top-0 z-40 md:px-24 lg:px-56">
@@ -88,14 +89,19 @@ const Navbar = () => {
               View pdf
             </Link> */}
           </div>
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
-              <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold hover:cursor-pointer transition-all duration-900 bg-gradient-to-r to-[#001942] from-[#C60B52]">
-                ENROLL NOW
-              </div>
-            </AlertDialogTrigger>
+          {/* <AlertDialog>
+            <AlertDialogTrigger asChild> */}
+          <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold hover:cursor-pointer transition-all duration-900 bg-gradient-to-r to-[#001942] from-[#C60B52]">
+            <Link
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
+            >
+              Enroll Now
+            </Link>
+          </div>
+          {/* </AlertDialogTrigger>
             <ADContent />
-          </AlertDialog>
+          </AlertDialog> */}
         </div>
       </nav>
 

@@ -1,16 +1,39 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/TkvT97C804g
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CheckIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export default function Component() {
+  const [name, setName] = useState("");
+  const [receiver, setReceiver] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendMail = async (e: any) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        subject: "Send Email TEST with Gmail and Nextjs",
+        name,
+        receiver,
+        message,
+      }),
+    });
+    console.log(response.status, await response.json());
+    if (response.status === 200) {
+      toast.success("Email Sent Successfully");
+    } else {
+      toast.error("Failed to send email", { duration: 5000, position: "top-center" });
+    }
+  };
   return (
     <>
       <section id="about" className="py-12 md:py-20 lg:py-24">
@@ -64,20 +87,43 @@ export default function Component() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52]">
                 Get in Touch
               </h2>
-              <form className="mt-4 space-y-4">
+              <form onSubmit={sendMail} className="mt-4 space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Enter your name" />
+                    <Input
+                      value={name}
+                      onChange={(e) => {
+                        setName(e.target.value);
+                      }}
+                      id="name"
+                      placeholder="Enter your name"
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" placeholder="Enter your email" type="email" />
+                    <Input
+                      value={receiver}
+                      onChange={(e) => {
+                        setReceiver(e.target.value);
+                      }}
+                      id="email"
+                      placeholder="Enter your email"
+                      type="email"
+                    />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea className="min-h-[120px]" id="message" placeholder="Enter your message" />
+                  <Textarea
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                    className="min-h-[120px]"
+                    id="message"
+                    placeholder="Enter your message"
+                  />
                 </div>
                 <Button type="submit">Send Message</Button>
               </form>
