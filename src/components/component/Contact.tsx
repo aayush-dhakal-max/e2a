@@ -169,12 +169,12 @@ export default function Component() {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg bg-white p-3 md:h-full shadow-md">
-              <h3 className="text-2xl font-bold tracking-tighter">Find Us on Map</h3>
-              <div className="mt-1  aspect-video overflow-hidden rounded-lg">
+            <div className="rounded-lg bg-white p-2 shadow-md">
+              <h3 className="text-xl md:text-2xl font-bold tracking-tighter">Find Us on Map</h3>
+              <div className="mt-1 aspect-video overflow-hidden rounded-lg">
                 <iframe
                   title="Google Maps"
-                  className="rounded-sm h-full"
+                  className="rounded-sm"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2645232799005!2d85.31198767525271!3d27.67821807619923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ef1dbb9b8d%3A0x1a26f16a81a0e6e7!2sE2A%20Learning%20Nepal!5e0!3m2!1sen!2snp!4v1706521624603!5m2!1sen!2snp"
                   width="100%"
                   height="100%"
