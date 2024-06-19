@@ -3,21 +3,26 @@ import Image from "next/image";
 import Link from "next/link";
 import ADContent from "@/components/component/EnrollDialogContent";
 import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
-import { Marhey } from "next/font/google";
+import { Teko, Exo_2 } from "next/font/google";
 
-export const marhey = Marhey({ display: "swap", subsets: ["latin"], variable: "--font-marhey" });
+export const teko = Teko({ display: "swap", subsets: ["latin"], weight: "600", variable: "--font-marhey" });
+export const teko2 = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-marhey" });
 
 export function Hero() {
   return (
     <section className="w-full bg-gray-50 min-h-[80vh] py-8 md:pt-10 lg:pt-10">
       <div className="container px-4 md:px-16 md:mb-16 text-center space-y-6">
         <div className="md:h-1/2">
-          <h1 className={`text-5xl uppercase font-bold tracking-tight sm:text-4xl md:text-4xl lg:text-5xl`}>
+          <h1
+            className={`text-5xl text-sp font-bold tracking-wide md:tracking-wider sm:text-4xl md:text-4xl lg:text-5xl ${teko.className}`}
+          >
             Level Up Your A-Levels with <br /> <span className="text-[#001942]">E</span>
             <span className="text-[#C60B52]">2</span>
             <span className="text-[#001942]">A</span> Learning Nepal
           </h1>
-          <p className={`text-xl pt-6 pb-0 md:pt-10 md:pb-3 md:text-xl lg:text-2xl max-w-3xl mx-auto `}>
+          <p
+            className={`text-2xl pt-6 pb-0 md:pt-10 md:pb-3 md:text-xl lg:text-3xl max-w-3xl mx-auto ${teko2.className}`}
+          >
             Empowering A-Level students with expert guidance, comprehensive resources, and a path to academic
             excellence.
           </p>
