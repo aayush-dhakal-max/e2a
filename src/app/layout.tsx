@@ -3,7 +3,7 @@ import { Libre_Franklin, Inter, Poppins, Teko } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-export const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
+const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
 
 export const metadata: Metadata = {
   title: "E2A Nepal",
