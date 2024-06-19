@@ -32,8 +32,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full py-20 bg-gray-50 dark:bg-gray-800" id="testimonials">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800" id="testimonials">
+      <div className="container px-4 md:px-16">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52]">

@@ -15,8 +15,8 @@ export default function Component() {
     <main className="flex flex-col w-full">
       <Navbar />
       <Hero />
-      <section className="w-full py-20 bg-white dark:bg-gray-900" id="courses">
-        <div className="container px-4 md:px-6">
+      <section className="w-full py-12 md:py-16 lg:py-20 bg-white dark:bg-gray-900" id="courses">
+        <div className="container px-4 md:px-16">
           <div className="space-y-6">
             <div className="space-y-2 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
@@ -24,13 +24,13 @@ export default function Component() {
                 Explore our range of A-level tuition services and resources to help you excel in your exams.
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 items-center lg:grid-cols-4">
               <Card>
                 <CardHeader>
                   <CardTitle>Computer</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 dark:text-gray-400 text-base">
                     Ace your A-level Computer exams with our curated course materials and past papers.
                   </p>
                 </CardContent>

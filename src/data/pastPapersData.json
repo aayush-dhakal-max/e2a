@@ -114,5 +114,34 @@
                 "href": "#"
             }
         ]
+    },
+    {
+        "subject": "Economics - 9702",
+        "papers": [
+            {
+                "year": "2023 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
+                "href": "#"
+            }
+        ]
     }
 ]

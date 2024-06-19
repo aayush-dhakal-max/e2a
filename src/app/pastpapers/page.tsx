@@ -13,7 +13,7 @@ export default function Component() {
         <div className="space-y-6">
           {pastPapersData.map((subjectData, index) => (
             <Collapsible
-              key={index}
+              key={subjectData.subject}
               className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-950"
             >
               <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
@@ -28,7 +28,7 @@ export default function Component() {
               <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
                 {subjectData.papers.map((paper, paperIndex) => (
                   <Link
-                    key={paperIndex}
+                    key={subjectData.subject + paperIndex}
                     className="rounded-md bg-gray-300 px-3 py-3 text-sm font-medium transition-colors hover:bg-gray-800 hover:text-white"
                     href={paper.href}
                   >

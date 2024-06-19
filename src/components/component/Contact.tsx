@@ -6,6 +6,7 @@ import Image from "next/image";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import { toast } from "sonner";
+import Link from "next/link";
 
 export default function Component() {
   const [name, setName] = useState("");
@@ -36,11 +37,11 @@ export default function Component() {
   };
   return (
     <>
-      <section id="about" className="py-12 md:py-20 lg:py-24">
-        <div className="container px-4 md:px-6">
+      <section id="about" className="py-12 md:py-16 lg:py-20">
+        <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl text-gray-600 font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl text-[#001942] font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 A-Level Tuition at <span className="text-[#001942]">E</span>
                 <span className="text-[#C60B52]">2</span>
                 <span className="text-[#001942]">A</span>
@@ -134,33 +135,37 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 py-12 md:py-20 lg:py-24 dark:bg-gray-800">
-        <div className="container px-4 md:px-6">
+      <section className="bg-gray-50 py-12 md:py-16 lg:py-20 ">
+        <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
-              <div className="mt-4 space-y-4 text-gray-500 dark:text-gray-400">
+              <div className="mt-4 space-y-4 text-gray-500 ">
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-50">Address</h3>
-                  <p>123 Main Street, Anytown USA</p>
+                  <h3 className="font-semibold text-gray-900">Address</h3>
+                  <p>Pulchowk, Jhamsikhel Marg, Lalitpur 44600</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-50">Phone</h3>
-                  <p>+977 9801234567</p>
+                  <h3 className="font-semibold text-gray-900">Phone</h3>
+                  <Link className="hover:text-gray-800" href={"tel:9866551435"}>
+                    9866551435
+                  </Link>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-50">Mail address</h3>
-                  <p>helpdesk@e2alearning.com</p>
+                  <h3 className="font-semibold text-gray-900">Mail address</h3>
+                  <Link className="hover:text-gray-800" href={"mailto:e2alearningnepal@gmail.com"}>
+                    e2alearningnepal@gmail.com
+                  </Link>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-50">Hours</h3>
-                  <p>Monday - Friday: 9am - 6pm</p>
+                  <h3 className="font-semibold text-gray-900">Hours</h3>
+                  <p>Sunday - Friday: 9am - 6pm</p>
                 </div>
               </div>
             </div>
-            <div className="rounded-lg bg-white p-3 shadow-md dark:bg-gray-950">
+            <div className="rounded-lg bg-white p-3 md:h-full shadow-md">
               <h3 className="text-2xl font-bold tracking-tighter">Find Us on Map</h3>
-              <div className="mt-1 aspect-video overflow-hidden rounded-lg">
+              <div className="mt-1  aspect-video overflow-hidden rounded-lg">
                 <iframe
                   title="Google Maps"
                   className="rounded-sm h-full"
