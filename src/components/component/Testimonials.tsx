@@ -2,7 +2,7 @@ import React from "react";
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
-
+import Autoplay from "embla-carousel-autoplay";
 const testimonials = [
   {
     quote:
@@ -43,7 +43,11 @@ const Testimonials = () => {
               Hear from our satisfied students about their experience with our A-level courses.
             </p>
           </div>
-          <Carousel className="relative ">
+          <Carousel
+            // plugins={[Autoplay({ delay: 3000 })]}
+            opts={{ align: "start", loop: true }}
+            className="relative "
+          >
             <CarouselContent className="h-fit">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem
@@ -52,7 +56,7 @@ const Testimonials = () => {
                 >
                   <Card key={index} className="md:h-fit sm:h-[200px] flex flex-col justify-between">
                     <CardContent>
-                      <blockquote className="text-lg font-semibold leading-snug mt-6">
+                      <blockquote className="text-base font-semibold leading-snug mt-6">
                         {testimonial.quote}
                       </blockquote>
                     </CardContent>
