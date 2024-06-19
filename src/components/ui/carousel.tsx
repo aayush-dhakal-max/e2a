@@ -46,7 +46,6 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
       {
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
-        loop: true,
       },
       plugins
     );

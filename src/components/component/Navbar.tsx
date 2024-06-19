@@ -75,7 +75,7 @@ const Navbar = () => {
 
         {/* 2nd row navbar */}
         <div className="flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-3 px-4">
-          <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-lg font-bold ">
+          <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-xl font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
               PAST PAPERS
             </Link>
@@ -85,9 +85,6 @@ const Navbar = () => {
             <Link className="text-gray-800 hover:text-gray-600" href="/">
               HOME
             </Link>
-            {/* <Link className="text-gray-800 hover:text-gray-600" href="/pdfviewer">
-              View pdf
-            </Link> */}
           </div>
           {/* <AlertDialog>
             <AlertDialogTrigger asChild> */}

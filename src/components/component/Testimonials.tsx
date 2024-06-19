@@ -1,8 +1,12 @@
 import React from "react";
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
-// import Autoplay from "embla-carousel-autoplay";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import { Marhey } from "next/font/google";
+import Autoplay from "embla-carousel-autoplay";
+
+export const marhey = Marhey({ display: "swap", subsets: ["latin"], variable: "--font-marhey" });
+
 const testimonials = [
   {
     quote:
@@ -36,7 +40,9 @@ const Testimonials = () => {
       <div className="container px-4 md:px-16">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52]">
+            <h2
+              className={`text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52] ${marhey.className}`}
+            >
               What Our Students Say
             </h2>
             <p className="max-w-[700px] mx-auto text-[#001942] md:text-xl dark:text-gray-400">
@@ -44,7 +50,8 @@ const Testimonials = () => {
             </p>
           </div>
           <Carousel
-            // plugins={[Autoplay({ delay: 3000 })]}
+            plugins={[Autoplay({ playOnInit: true, delay: 2500 })]}
+            opts={{ loop: true }}
             className="relative "
           >
             <CarouselContent className="h-fit">
@@ -76,7 +83,7 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             {/* <CarouselPrevious /> */}
-            <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white animate-bounce duration-1000" />
+            {/* <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white animate-bounce duration-1000" /> */}
           </Carousel>
         </div>
       </div>
