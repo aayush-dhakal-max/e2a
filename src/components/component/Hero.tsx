@@ -10,7 +10,7 @@ export const teko2 = Teko({ display: "swap", subsets: ["latin"], weight: "400", 
 
 export function Hero() {
   return (
-    <section className="w-full bg-gray-50 min-h-[80vh] py-8 md:pt-10 lg:pt-10">
+    <section className="w-full bg-gray-50 min-h-[80vh] py-8 pt-20 md:pt-10 lg:pt-10">
       <div className="container px-4 md:px-16 md:mb-16 text-center space-y-6">
         <div className="md:h-1/2">
           <h1
