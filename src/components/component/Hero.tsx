@@ -14,7 +14,7 @@ export function Hero() {
       <div className="container px-4 md:px-16 md:mb-16 text-center space-y-6">
         <div className="md:h-1/2">
           <h1
-            className={`text-5xl text-sp font-bold tracking-wide md:tracking-wider sm:text-4xl md:text-4xl lg:text-5xl ${teko.className}`}
+            className={`text-4xl text-sp font-bold tracking-wide md:tracking-wider sm:text-4xl md:text-4xl lg:text-5xl ${teko.className}`}
           >
             Level Up Your A-Levels with <br /> <span className="text-[#001942]">E</span>
             <span className="text-[#C60B52]">2</span>
@@ -34,7 +34,8 @@ export function Hero() {
             <Link
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
-              className="md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-xl py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] focus:outline-none "
+              className={`md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-xl py-2 px-4
+                 rounded-full shadow-md hover:bg-[#591f35] focus:outline-none ${teko2.className}`}
               prefetch={false}
             >
               Enroll Now

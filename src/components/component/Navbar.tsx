@@ -36,7 +36,7 @@ const Navbar = () => {
         href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
         className={`${
           isScrolled ? "block" : "hidden"
-        } md:hidden shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
+        } md:hidden text-xl shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
       >
         Enroll Now
       </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
         {/* 2nd row navbar */}
         <div
-          className={`flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-3 pb-2 px-4 ${teko.className}`}
+          className={`flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-3 px-4 ${teko.className}`}
         >
           <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-xl font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
@@ -95,7 +95,7 @@ const Navbar = () => {
           </div>
           {/* <AlertDialog>
             <AlertDialogTrigger asChild> */}
-          <div className="ml-4 bg-[#C60B52] text-white px-3 py-2 -m-3 rounded-3xl  text-xl font-bold hover:cursor-pointer transition-all duration-900 bg-[#C60B52] bg-gradient-to-r sto-[#001942] sfrom-[#C60B52]">
+          <div className=" bg-[#C60B52] text-white px-3 py-2 -m-1 rounded-3xl text-xl font-bold hover:cursor-pointer transition-all duration-900">
             <Link
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
@@ -148,7 +148,7 @@ const Navbar = () => {
               : "opacity-0 transform max-h-0 -translate-y-full duration-700"
           } md:hidden transition-all transition-max-height  ease-in-out overflow-hidden`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-2xl">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-3xl">
             <Link
               href="/"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"

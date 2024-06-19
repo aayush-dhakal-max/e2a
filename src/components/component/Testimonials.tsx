@@ -2,10 +2,7 @@ import React from "react";
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-import { Marhey } from "next/font/google";
 import Autoplay from "embla-carousel-autoplay";
-
-export const marhey = Marhey({ display: "swap", subsets: ["latin"], variable: "--font-marhey" });
 
 const testimonials = [
   {
@@ -41,7 +38,7 @@ const Testimonials = () => {
         <div className="space-y-6">
           <div className="space-y-2 text-center">
             <h2
-              className={`text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52] ${marhey.className}`}
+              className={`text-3xl font-bold  tracking-wide md:tracking-wider sm:text-4xl md:text-5xl text-[#C60B52] `}
             >
               What Our Students Say
             </h2>
@@ -62,9 +59,7 @@ const Testimonials = () => {
                 >
                   <Card key={index} className="md:h-fit sm:h-[200px] flex flex-col justify-between">
                     <CardContent>
-                      <blockquote className="text-base font-semibold leading-snug mt-6">
-                        {testimonial.quote}
-                      </blockquote>
+                      <blockquote className="text-xl leading-snug mt-6">{testimonial.quote}</blockquote>
                     </CardContent>
                     <CardFooter>
                       <div className="flex items-center space-x-4">
@@ -72,8 +67,8 @@ const Testimonials = () => {
                           <AvatarImage src="https://i.pravatar.cc/300" />
                           <AvatarFallback>{testimonial.avatarFallback}</AvatarFallback>
                         </Avatar>
-                        <div>
-                          <div className="font-semibold">{testimonial.name}</div>
+                        <div className="text-xl ">
+                          <div className="">{testimonial.name}</div>
                           <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
                         </div>
                       </div>

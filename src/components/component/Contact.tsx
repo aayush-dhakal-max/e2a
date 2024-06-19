@@ -41,12 +41,12 @@ export default function Component() {
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl text-[#001942] font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl text-[#001942] font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
                 A-Level Tuition at <span className="text-[#001942]">E</span>
                 <span className="text-[#C60B52]">2</span>
                 <span className="text-[#001942]">A</span>
               </h2>
-              <p className="mt-4 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="mt-4 text-gray-500 text-xl md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                 Our A-Level tuition institute offers comprehensive and personalized support to help students
                 excel in their A-Level examinations. With experienced teachers, small class sizes, and a focus
                 on individualized learning, we are committed to guiding our students to academic success.
@@ -55,8 +55,8 @@ export default function Component() {
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
                   <div>
-                    <h3 className="text-lg font-medium">Experienced Teachers</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
+                    <h3 className="text-xl font-medium">Experienced Teachers</h3>
+                    <p className="text-gray-500 text-xl dark:text-gray-400">
                       Our team of highly qualified and experienced teachers are dedicated to providing
                       exceptional instruction and support.
                     </p>
@@ -65,8 +65,8 @@ export default function Component() {
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
                   <div>
-                    <h3 className="text-lg font-medium">Small Class Sizes</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
+                    <h3 className="text-xl font-medium">Small Class Sizes</h3>
+                    <p className="text-gray-500 text-xl dark:text-gray-400">
                       We maintain small class sizes to ensure personalized attention and a collaborative
                       learning environment.
                     </p>
@@ -75,8 +75,8 @@ export default function Component() {
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
                   <div>
-                    <h3 className="text-lg font-medium">Personalized Learning</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
+                    <h3 className="text-xl font-medium">Personalized Learning</h3>
+                    <p className="text-gray-500 text-xl dark:text-gray-400">
                       Our tailored approach to learning helps students overcome their unique challenges and
                       reach their full potential.
                     </p>
@@ -85,13 +85,15 @@ export default function Component() {
               </ul>
             </div>
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#C60B52]">
+              <h2 className="text-4xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl text-[#C60B52]">
                 Get in Touch
               </h2>
               <form onSubmit={sendMail} className="mt-4 space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label className="text-xl" htmlFor="name">
+                      Name
+                    </Label>
                     <Input
                       required
                       value={name}
@@ -100,10 +102,13 @@ export default function Component() {
                       }}
                       id="name"
                       placeholder="Enter your name"
+                      className="text-xl"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label className="text-xl" htmlFor="email">
+                      Email
+                    </Label>
                     <Input
                       required
                       value={sender}
@@ -113,33 +118,40 @@ export default function Component() {
                       id="email"
                       placeholder="Enter your email"
                       type="email"
+                      className="text-xl"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label className="text-xl" htmlFor="message">
+                    Message
+                  </Label>
                   <Textarea
                     required
                     value={message}
                     onChange={(e) => {
                       setMessage(e.target.value);
                     }}
-                    className="min-h-[120px]"
+                    className="min-h-[120px] text-xl"
                     id="message"
                     placeholder="Enter your message"
                   />
                 </div>
-                <Button type="submit">Send Message</Button>
+                <Button className="text-xl" type="submit">
+                  Send Message
+                </Button>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-gray-50 py-12 md:py-16 lg:py-20 ">
+      <section className="bg-gray-50 py-12 md:py-16 lg:py-20 text-xl ">
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
+              <h2 className="text-3xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
+                Contact Us
+              </h2>
               <div className="mt-4 space-y-4 text-gray-500 ">
                 <div>
                   <h3 className="font-semibold text-gray-900">Address</h3>
@@ -170,7 +182,9 @@ export default function Component() {
               </div>
             </div>
             <div className="rounded-lg bg-white p-2 shadow-md">
-              <h3 className="text-xl md:text-2xl font-bold tracking-tighter">Find Us on Map</h3>
+              <h3 className="text-xl md:text-2xl font-bold tracking-normal md:tracking-wider">
+                Find Us on Map
+              </h3>
               <div className="mt-1 aspect-video overflow-hidden rounded-lg">
                 <iframe
                   title="Google Maps"
