@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { CheckIcon } from "@radix-ui/react-icons";
+import { CheckIcon, MobileIcon, EnvelopeClosedIcon, SewingPinFilledIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
@@ -143,17 +143,23 @@ export default function Component() {
               <div className="mt-4 space-y-4 text-gray-500 ">
                 <div>
                   <h3 className="font-semibold text-gray-900">Address</h3>
-                  <p>Pulchowk, Jhamsikhel Marg, Lalitpur 44600</p>
+                  <p className="flex items-center gap-1">
+                    <SewingPinFilledIcon /> Pulchowk, Jhamsikhel Marg, Lalitpur 44600
+                  </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Phone</h3>
-                  <Link className="hover:text-gray-800" href={"tel:9866551435"}>
-                    9866551435
+                  <Link className="hover:text-gray-800 flex items-center gap-1" href={"tel:9866551435"}>
+                    <MobileIcon /> 9866551435
                   </Link>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Mail address</h3>
-                  <Link className="hover:text-gray-800" href={"mailto:e2alearningnepal@gmail.com"}>
+                  <Link
+                    className="hover:text-gray-800 flex items-center gap-2"
+                    href={"mailto:e2alearningnepal@gmail.com"}
+                  >
+                    <EnvelopeClosedIcon />
                     e2alearningnepal@gmail.com
                   </Link>
                 </div>
