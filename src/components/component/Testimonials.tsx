@@ -2,7 +2,7 @@ import React from "react";
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+// import Autoplay from "embla-carousel-autoplay";
 const testimonials = [
   {
     quote:
@@ -45,7 +45,6 @@ const Testimonials = () => {
           </div>
           <Carousel
             // plugins={[Autoplay({ delay: 3000 })]}
-            opts={{ align: "start", loop: true }}
             className="relative "
           >
             <CarouselContent className="h-fit">
