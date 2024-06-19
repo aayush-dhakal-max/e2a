@@ -1,7 +1,7 @@
 import React from "react";
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
@@ -78,7 +78,7 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             {/* <CarouselPrevious /> */}
-            {/* <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white animate-bounce duration-1000" /> */}
+            <CarouselNext className="absolute top-[47%] right-2 bg-[#001942] text-white animate-bounce duration-1000" />
           </Carousel>
         </div>
       </div>
