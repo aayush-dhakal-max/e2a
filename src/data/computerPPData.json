@@ -1,6 +1,7 @@
 [
     {
         "subject": "Paper 1",
+        "cols": 2,
         "exams": [
             {
                 "name": "QP - 11",
@@ -30,6 +31,7 @@
     },
     {
         "subject": "Paper 2",
+        "cols": 3,
         "exams": [
             {
                 "name": "QP - 21",
@@ -37,6 +39,10 @@
             },
             {
                 "name": "MS - 21",
+                "href": "https://drive.google.com/file/d/1yjO15hDvAPBBmA77Z4PMfqUTe3Z9nJef/preview?usp=drive_link"
+            },
+            {
+                "name": "IP - 21",
                 "href": "https://drive.google.com/file/d/1yjO15hDvAPBBmA77Z4PMfqUTe3Z9nJef/preview?usp=drive_link"
             },
             {
@@ -48,11 +54,19 @@
                 "href": "https://drive.google.com/file/d/15wCzJ1GHjSb4G9r0Bu7aSevv71sOLzex/preview?usp=drive_link"
             },
             {
+                "name": "IP - 21",
+                "href": "https://drive.google.com/file/d/15wCzJ1GHjSb4G9r0Bu7aSevv71sOLzex/preview?usp=drive_link"
+            },
+            {
                 "name": "QP - 23",
                 "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
             },
             {
                 "name": "MS - 23",
+                "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
+            },
+            {
+                "name": "IP - 23",
                 "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
             }
         ]

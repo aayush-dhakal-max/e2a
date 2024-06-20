@@ -49,17 +49,19 @@ const Navbar = () => {
         {/* first row navbar */}
         <div className="flex justify-between items-center w-full">
           <div className="w-28 h-12"></div>
-          <Image
-            alt="Students laughing"
-            className="mx-auto rounded-lg"
-            height="60"
-            src="/logo.svg"
-            style={{
-              aspectRatio: "120/60",
-              objectFit: "cover",
-            }}
-            width="120"
-          />
+          <Link href={"/"}>
+            <Image
+              alt="Students laughing"
+              className="mx-auto rounded-lg"
+              height="60"
+              src="/logo.svg"
+              style={{
+                aspectRatio: "120/60",
+                objectFit: "cover",
+              }}
+              width="120"
+            />
+          </Link>
           <div className="flex space-x-4 pr-5">
             <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
               <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />

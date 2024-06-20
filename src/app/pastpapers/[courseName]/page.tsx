@@ -38,7 +38,7 @@ export default function Component() {
   }, []);
 
   return (
-    <div className={`md:mx-12 p-2 md:mt-32 ${teko2.className}`}>
+    <div className={`md:mx-0 lg:mx-16 p-2 md:mt-32 ${teko2.className}`}>
       <div className="grid grid-cols-1 md:grid-cols-[25vw_1fr] sm:grid-cols-1 lg:grid-cols-1[20vw_1fr] gap-2">
         {/* Mobile view */}
         <div className="md:hidden block">
@@ -67,7 +67,9 @@ export default function Component() {
                             </div>
                           </CollapsibleTrigger>
 
-                          <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
+                          <CollapsibleContent
+                            className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}
+                          >
                             {paper.exams.map((exam) => (
                               <Link
                                 onClick={() => {
@@ -117,7 +119,7 @@ export default function Component() {
                     </div>
                   </CollapsibleTrigger>
 
-                  <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
+                  <CollapsibleContent className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}>
                     {paper.exams.map((exam) => (
                       <Link
                         onClick={() => {
