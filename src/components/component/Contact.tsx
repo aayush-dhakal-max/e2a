@@ -183,7 +183,7 @@ export default function Component() {
               </div>
             </div>
             <div className="rounded-lg bg-white p-2 shadow-md">
-              <h3 className="text-xl md:text-2xl font-bold tracking-normal md:tracking-wider">
+              <h3 className="text-4xl md:text-4xl font-bold tracking-normal md:tracking-wider">
                 Find Us on Map
               </h3>
               <div className="mt-1 aspect-video overflow-hidden rounded-lg">
