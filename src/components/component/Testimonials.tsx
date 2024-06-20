@@ -43,7 +43,7 @@ const Testimonials = () => {
         <div className="space-y-6">
           <div className="space-y-2 text-center">
             <h2
-              className={`text-3xl font-bold  tracking-wide md:tracking-wider sm:text-4xl md:text-5xl text-[#C60B52] `}
+              className={`text-4xl font-bold  tracking-wide md:tracking-wider sm:text-4xl md:text-5xl text-[#C60B52] `}
             >
               What Our Students Say
             </h2>

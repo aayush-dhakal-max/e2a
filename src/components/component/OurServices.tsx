@@ -11,7 +11,7 @@ const OurServices = () => {
       <div className="container px-4 md:px-16">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h2 className="text-3xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
+            <h2 className="text-4xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
               Our Services
             </h2>
             <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl text-xl dark:text-gray-400">

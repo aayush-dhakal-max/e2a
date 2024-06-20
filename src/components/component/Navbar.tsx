@@ -80,7 +80,7 @@ const Navbar = () => {
         <div
           className={`flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-1 pl-4 ${teko.className}`}
         >
-          <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-2xl font-bold ">
+          <div className=" md:space-x-6 mt-0.5 lg:space-x-6 xl:space-x-10 text-2xl font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
               PAST PAPERS
             </Link>
@@ -95,6 +95,7 @@ const Navbar = () => {
             <AlertDialogTrigger asChild> */}
           <div className=" bg-[#C60B52] text-white px-3 py-2 rounded-3xl text-2xl font-bold hover:cursor-pointer transition-all duration-900">
             <Link
+              className=""
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
             >
