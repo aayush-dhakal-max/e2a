@@ -1,9 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
-import { Teko } from "next/font/google";
-
-export const teko2 = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-marhey" });
+import { teko2 } from "@/lib/utils";
 
 const OurServices = () => {
   return (

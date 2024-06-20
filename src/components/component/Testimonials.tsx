@@ -4,6 +4,8 @@ import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
+import { teko2 } from "@/lib/utils";
+
 const testimonials = [
   {
     quote:
@@ -33,7 +35,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800" id="testimonials">
+    <section
+      className={`w-full py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800 ${teko2.className}`}
+      id="testimonials"
+    >
       <div className="container px-4 md:px-16">
         <div className="space-y-6">
           <div className="space-y-2 text-center">

@@ -5,9 +5,7 @@ import Image from "next/image";
 import ADContent from "@/components/component/EnrollDialogContent";
 import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 import Link from "next/link";
-import { Teko } from "next/font/google";
-
-export const teko = Teko({ display: "swap", subsets: ["latin"], weight: "600", variable: "--font-marhey" });
+import { teko } from "@/lib/utils";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +26,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative md:mb-32 mb-16">
+    <div className="relative md:mb-28 mb-16">
       {/* <AlertDialog>
         <AlertDialogTrigger asChild> */}
       <Link
@@ -46,7 +44,7 @@ const Navbar = () => {
 
       {/* Desktop Device Navbar */}
       <nav
-        className={`pt-4 hidden md:flex flex-col justify-center items-center w-full bg-gray-50  fixed top-0 z-40 md:px-24 lg:px-56`}
+        className={`pt-1 hidden md:flex flex-col justify-center items-center w-full bg-gray-50  fixed top-0 z-40 md:px-24 lg:px-56`}
       >
         {/* first row navbar */}
         <div className="flex justify-between items-center w-full">
@@ -80,7 +78,7 @@ const Navbar = () => {
 
         {/* 2nd row navbar */}
         <div
-          className={`flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-3 px-4 ${teko.className}`}
+          className={`flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-1 pl-4 ${teko.className}`}
         >
           <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-xl font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
@@ -95,7 +93,7 @@ const Navbar = () => {
           </div>
           {/* <AlertDialog>
             <AlertDialogTrigger asChild> */}
-          <div className=" bg-[#C60B52] text-white px-3 py-2 -m-1 rounded-3xl text-xl font-bold hover:cursor-pointer transition-all duration-900">
+          <div className=" bg-[#C60B52] text-white px-3 py-2 rounded-3xl text-xl font-bold hover:cursor-pointer transition-all duration-900">
             <Link
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"

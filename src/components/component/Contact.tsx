@@ -7,6 +7,7 @@ import { CheckIcon, MobileIcon, EnvelopeClosedIcon, SewingPinFilledIcon } from "
 import { useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
+import { teko2 } from "@/lib/utils";
 
 export default function Component() {
   const [name, setName] = useState("");
@@ -37,11 +38,11 @@ export default function Component() {
   };
   return (
     <>
-      <section id="about" className="py-12 md:py-16 lg:py-20">
+      <section id="about" className={`py-12 md:py-16 lg:py-20 ${teko2.className}`}>
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl text-[#001942] font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
+              <h2 className="text-4xl text-[#001942] font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
                 A-Level Tuition at <span className="text-[#001942]">E</span>
                 <span className="text-[#C60B52]">2</span>
                 <span className="text-[#001942]">A</span>
@@ -53,9 +54,9 @@ export default function Component() {
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start">
-                  <CheckIcon className="mr-2 mt-1 h-4 w-4" />
+                  <CheckIcon className=" mr-2 mt-1 h-4 w-4" />
                   <div>
-                    <h3 className="text-xl font-medium">Experienced Teachers</h3>
+                    <h3 className="text-xl font-medium tracking-wide">Experienced Teachers</h3>
                     <p className="text-gray-500 text-xl dark:text-gray-400">
                       Our team of highly qualified and experienced teachers are dedicated to providing
                       exceptional instruction and support.
@@ -145,7 +146,7 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-50 py-12 md:py-16 lg:py-20 text-xl ">
+      <section className={`bg-gray-50 py-12 md:py-16 lg:py-20 text-xl ${teko2.className}`}>
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
