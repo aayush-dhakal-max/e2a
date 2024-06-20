@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { useEffect, useState } from "react";
 import papers from "@/data/computerPPData.json";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { teko2 } from "@/lib/utils";
 
 import {
   Drawer,
@@ -47,7 +48,7 @@ export default function Component() {
   }, []);
 
   return (
-    <div className="md:mx-12 p-2">
+    <div className={`md:mx-12 p-2 ${teko2.className}`}>
       <div className="grid grid-cols-1 md:grid-cols-[25vw_1fr] sm:grid-cols-1 lg:grid-cols-1[20vw_1fr] gap-2">
         {/* Mobile view */}
         <div className="md:hidden block">

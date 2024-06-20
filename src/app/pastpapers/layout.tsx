@@ -1,8 +1,6 @@
 import Navbar from "@/components/component/Navbar";
 import type { Metadata } from "next";
-import { Inter, Teko } from "next/font/google";
-
-const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
+import { teko2 } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "A Levels Past Papers",
@@ -20,7 +18,7 @@ export default function RootLayout({
       <head>
         <title>Past Papers</title>
       </head>
-      <body className={teko.className}>
+      <body className={teko2.className}>
         {/* <Navbar /> */}
         {children}
       </body>
