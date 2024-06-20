@@ -4,22 +4,12 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { useEffect, useState } from "react";
 import papers from "@/data/computerPPData.json";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
 
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-  DrawerOverlay,
-  DrawerPortal,
-} from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger, DrawerOverlay, DrawerPortal } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 export default function Component() {
   const [PdfLink, setPdfLink] = useState("");
@@ -62,35 +52,43 @@ export default function Component() {
               <DrawerContent className="bg-white flex flex-col h-full w-[300px] max-w-[70vw] mt-24 fixed bottom-0 right-0">
                 <div className="p-2 md:p-4 bg-white flex-1 h-full ">
                   <ScrollArea className="h-full md:border-none rounded-lg drop-shadow-lg border-black md:border-2 ">
-                    <div className="p-2 md:p-4 space-y-2 bg-gray-200">
+                    <div className="p-2 md:p-4 space-y-2 bg-gray-0">
                       {papers.map((paper) => (
-                        <div key={paper.subject[2]}>
-                          <h3 className="text-2xl tracking-wide font-medium text-[#C60B52] mb-2">
-                            {paper.subject}
-                          </h3>
-                          <div key={paper.subject} className="grid gap-2">
+                        <Collapsible
+                          key={paper.subject}
+                          className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm"
+                        >
+                          <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
+                            <div className="flex items-center justify-between space-x-4">
+                              <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
+                              <Button size="sm" variant="ghost">
+                                <ChevronDownIcon className="h-6 w-6  transition-transform [&[data-state=open]]:rotate-180" />
+                              </Button>
+                            </div>
+                          </CollapsibleTrigger>
+
+                          <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
                             {paper.exams.map((exam) => (
                               <Link
                                 onClick={() => {
                                   setPdfLink(exam.href);
-                                  setOpen(false);
                                   setActiveLink(exam.name);
                                 }}
                                 key={exam.name}
                                 href={"#"}
-                                className={`block w-full bg-gray-300 rounded-md px-3 py-2 tracking-wide text-lg font-medium ${
-                                  activeLink === exam.name
-                                    ? "bg-gray-800 text-white"
-                                    : "hover:bg-gray-800 hover:text-white"
-                                } transition-colors duration-400`}
+                                className={`block w-full bg-gray-300 rounded-md px-3 py-2 text-lg tracking-wide font-medium transition-colors duration-400 
+                              ${
+                                activeLink === exam.name
+                                  ? "bg-gray-800 text-white"
+                                  : "hover:bg-gray-800 hover:text-white"
+                              }`}
                                 prefetch={false}
                               >
                                 {exam.name}
                               </Link>
                             ))}
-                            <Separator className="bg-black h-0.5 rounded-2xl" />
-                          </div>
-                        </div>
+                          </CollapsibleContent>
+                        </Collapsible>
                       ))}
                     </div>
                   </ScrollArea>
@@ -103,11 +101,22 @@ export default function Component() {
         {/* Desktop view */}
         <div className={`rounded-lg overflow-hidden md:block hidden`}>
           <ScrollArea className="h-[calc(100vh-160px)] drop-shadow-lg border-black rounded-lg">
-            <div className="p-4 space-y-2 bg-gray-100">
+            <div className="p-4 space-y-2 bg-gray-0">
               {papers.map((paper) => (
-                <div key={paper.subject}>
-                  <h3 className="text-2xl tracking-wide font-medium text-[#C60B52] mb-2">{paper.subject}</h3>
-                  <div key={paper.subject} className="grid gap-2">
+                <Collapsible
+                  key={paper.subject}
+                  className="rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm"
+                >
+                  <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
+                    <div className="flex items-center justify-between space-x-4">
+                      <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
+                      <Button size="sm" variant="ghost">
+                        <ChevronDownIcon className="h-6 w-6  transition-transform [&[data-state=open]]:rotate-180" />
+                      </Button>
+                    </div>
+                  </CollapsibleTrigger>
+
+                  <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
                     {paper.exams.map((exam) => (
                       <Link
                         onClick={() => {
@@ -117,19 +126,18 @@ export default function Component() {
                         key={exam.name}
                         href={"#"}
                         className={`block w-full bg-gray-300 rounded-md px-3 py-2 text-lg tracking-wide font-medium transition-colors duration-400 
-                          ${
-                            activeLink === exam.name
-                              ? "bg-gray-800 text-white"
-                              : "hover:bg-gray-800 hover:text-white"
-                          }`}
+                        ${
+                          activeLink === exam.name
+                            ? "bg-gray-800 text-white"
+                            : "hover:bg-gray-800 hover:text-white"
+                        }`}
                         prefetch={false}
                       >
                         {exam.name}
                       </Link>
                     ))}
-                    <Separator className="bg-black h-0.5 rounded-2xl" />
-                  </div>
-                </div>
+                  </CollapsibleContent>
+                </Collapsible>
               ))}
             </div>
           </ScrollArea>
