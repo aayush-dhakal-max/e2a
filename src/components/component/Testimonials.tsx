@@ -52,7 +52,9 @@ const Testimonials = () => {
             </p>
           </div>
           <Carousel
-            plugins={[Autoplay({ playOnInit: true, delay: 2500 })]}
+            plugins={[
+              Autoplay({ playOnInit: true, delay: 2500, stopOnFocusIn: true, stopOnInteraction: false }),
+            ]}
             opts={{ loop: true }}
             className="relative "
           >

@@ -73,6 +73,7 @@ export default function Component() {
                               <Link
                                 onClick={() => {
                                   setPdfLink(exam.href);
+                                  setOpen(false);
                                   setActiveLink(exam.name);
                                 }}
                                 key={exam.name}
