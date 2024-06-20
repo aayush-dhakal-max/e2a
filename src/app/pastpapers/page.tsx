@@ -34,7 +34,7 @@ export default function Component() {
                 {subjectData.papers.map((paper, paperIndex) => (
                   <Link
                     key={subjectData.subject + paperIndex}
-                    className="rounded-md bg-gray-300 px-3 py-3 text-sm font-medium transition-colors hover:bg-gray-800 hover:text-white"
+                    className="rounded-md bg-gray-300 px-3 py-3 text-lg font-medium transition-colors hover:bg-gray-800 hover:text-white"
                     href={paper.href}
                   >
                     {paper.year}

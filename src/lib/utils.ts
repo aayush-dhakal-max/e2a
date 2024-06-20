@@ -6,5 +6,5 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
-export const teko2 = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-marhey" });
+export const teko = Teko({ display: "swap", subsets: ["latin"], weight: "600", variable: "--font-teko" });
+export const teko2 = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
