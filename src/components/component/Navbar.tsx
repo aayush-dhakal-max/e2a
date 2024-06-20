@@ -5,7 +5,7 @@ import Image from "next/image";
 import ADContent from "@/components/component/EnrollDialogContent";
 import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 import Link from "next/link";
-import { teko } from "@/lib/utils";
+import { teko, teko2 } from "@/lib/utils";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,9 +32,9 @@ const Navbar = () => {
       <Link
         target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
-        className={`${
-          isScrolled ? "block" : "hidden"
-        } md:hidden text-xl shadow-black outline-1 z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
+        className={`${isScrolled ? "block" : "hidden"} md:hidden text-xl shadow-black outline-1 ${
+          teko2.className
+        } z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
       >
         Enroll Now
       </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
         <div
           className={`flex justify-between items-center w-full border-[#C60B52] rounded-full border-2 p-1 pl-4 ${teko.className}`}
         >
-          <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-xl font-bold ">
+          <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-2xl font-bold ">
             <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
               PAST PAPERS
             </Link>
@@ -93,7 +93,7 @@ const Navbar = () => {
           </div>
           {/* <AlertDialog>
             <AlertDialogTrigger asChild> */}
-          <div className=" bg-[#C60B52] text-white px-3 py-2 rounded-3xl text-xl font-bold hover:cursor-pointer transition-all duration-900">
+          <div className=" bg-[#C60B52] text-white px-3 py-2 rounded-3xl text-2xl font-bold hover:cursor-pointer transition-all duration-900">
             <Link
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
@@ -108,7 +108,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Device Navbar */}
-      <div className={`fixed top-0 shadow-md w-full z-10 bg-gray-50`}>
+      <div className={`fixed top-0 shadow-md w-full z-10 bg-gray-50 tracking-wide ${teko.className}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center md:hidden">
           <div className="flex items-center justify-center h-full">
             <Image

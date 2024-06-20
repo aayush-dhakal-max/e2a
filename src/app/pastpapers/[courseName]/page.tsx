@@ -65,7 +65,9 @@ export default function Component() {
                     <div className="p-2 md:p-4 space-y-2 bg-gray-200">
                       {papers.map((paper) => (
                         <div key={paper.subject[2]}>
-                          <h3 className="text-lg font-medium text-[#C60B52] mb-2">{paper.subject}</h3>
+                          <h3 className="text-2xl tracking-wide font-medium text-[#C60B52] mb-2">
+                            {paper.subject}
+                          </h3>
                           <div key={paper.subject} className="grid gap-2">
                             {paper.exams.map((exam) => (
                               <Link
@@ -75,7 +77,7 @@ export default function Component() {
                                 }}
                                 key={exam.name}
                                 href={"#"}
-                                className={`block w-full bg-gray-300 rounded-md px-3 py-2 text-sm font-medium ${
+                                className={`block w-full bg-gray-300 rounded-md px-3 py-2 tracking-wide text-lg font-medium ${
                                   activeLink === exam.name
                                     ? "bg-gray-800 text-white"
                                     : "hover:bg-gray-800 hover:text-white"
@@ -103,7 +105,7 @@ export default function Component() {
             <div className="p-4 space-y-2 bg-gray-100">
               {papers.map((paper) => (
                 <div key={paper.subject}>
-                  <h3 className="text-lg font-medium text-[#C60B52] mb-2">{paper.subject}</h3>
+                  <h3 className="text-2xl tracking-wide font-medium text-[#C60B52] mb-2">{paper.subject}</h3>
                   <div key={paper.subject} className="grid gap-2">
                     {paper.exams.map((exam) => (
                       <Link
@@ -113,11 +115,12 @@ export default function Component() {
                         }}
                         key={exam.name}
                         href={"#"}
-                        className={`block w-full bg-gray-300 rounded-md px-3 py-2 text-sm font-medium ${
-                          activeLink === exam.name
-                            ? "bg-gray-800 text-white"
-                            : "hover:bg-gray-800 hover:text-white"
-                        } transition-colors duration-400`}
+                        className={`block w-full bg-gray-300 rounded-md px-3 py-2 text-lg tracking-wide font-medium transition-colors duration-400 
+                          ${
+                            activeLink === exam.name
+                              ? "bg-gray-800 text-white"
+                              : "hover:bg-gray-800 hover:text-white"
+                          }`}
                         prefetch={false}
                       >
                         {exam.name}
