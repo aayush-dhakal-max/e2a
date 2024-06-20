@@ -114,17 +114,19 @@ const Navbar = () => {
       <div className={`fixed top-0 shadow-md w-full z-10 bg-gray-50 tracking-wide ${teko.className}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center md:hidden">
           <div className="flex items-center justify-center h-full">
-            <Image
-              alt="Students laughing"
-              className="pt-1 -ml-6 m-auto z-50"
-              height="70"
-              src="/logo.svg"
-              style={{
-                aspectRatio: "140/70",
-                objectFit: "cover",
-              }}
-              width="140"
-            />
+            <Link href={"/"}>
+              <Image
+                alt="Students laughing"
+                className="pt-1 -ml-6 m-auto z-50"
+                height="70"
+                src="/logo.svg"
+                style={{
+                  aspectRatio: "140/70",
+                  objectFit: "cover",
+                }}
+                width="140"
+              />
+            </Link>
           </div>
 
           <div className="-mr-2 flex md:hidden">
