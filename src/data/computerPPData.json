@@ -73,6 +73,7 @@
     },
     {
         "subject": "Paper 3",
+        "cols": 2,
         "exams": [
             {
                 "name": "QP - 31",
@@ -102,6 +103,7 @@
     },
     {
         "subject": "Paper 4",
+        "cols": 2,
         "exams": [
             {
                 "name": "QP - 41",
