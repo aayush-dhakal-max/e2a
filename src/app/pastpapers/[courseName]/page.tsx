@@ -68,7 +68,9 @@ export default function Component() {
                           </CollapsibleTrigger>
 
                           <CollapsibleContent
-                            className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}
+                            className={`grid gap-2 ${
+                              paper.cols == 2 ? "grid-cols-2" : "grid-cols-3"
+                            } CollapsibleContent`}
                           >
                             {paper.exams.map((exam) => (
                               <Link
