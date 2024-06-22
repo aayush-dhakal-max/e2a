@@ -1,12 +1,10 @@
 "use client";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
 import { useEffect, useState } from "react";
 import papers from "@/data/computer/9618_may_june_2021.json";
 import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
-
 import { Drawer, DrawerContent, DrawerTrigger, DrawerOverlay, DrawerPortal } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -14,7 +12,13 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 export default function Component() {
   const [PdfLink, setPdfLink] = useState("");
   const [open, setOpen] = useState(false);
+
+  // Active link visual in the sidebar
   const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    console.log(activeLink);
+  }, [activeLink]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,14 +28,8 @@ export default function Component() {
         setOpen(false);
       }
     };
-
-    // Initial check
     handleResize();
-
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
-
-    // Cleanup
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -80,7 +78,7 @@ export default function Component() {
                                   setActiveLink(pdf_file.name);
                                 }}
                                 key={pdf_file.name}
-                                href={"#"}
+                                href={{ query: { paper: pdf_file.paper } }}
                                 className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-lg tracking-wide font-medium transition-colors duration-400 
                               ${
                                 activeLink === pdf_file.name
@@ -129,7 +127,7 @@ export default function Component() {
                           setActiveLink(pdf_file.name);
                         }}
                         key={pdf_file.name}
-                        href={"#"}
+                        href={{ query: { paper: pdf_file.paper } }}
                         className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-xl tracking-wide font-medium transition-colors duration-400 
                         ${
                           activeLink === pdf_file.name
