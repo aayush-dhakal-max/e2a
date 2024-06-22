@@ -2,132 +2,184 @@
     {
         "subject": "Paper 1",
         "cols": 2,
-        "exams": [
+        "pdf_files": [
             {
                 "name": "QP - 11",
-                "href": "https://drive.google.com/file/d/1FCGz8XY2oOVzvsaCkd4H9Vs-WHYfICyb/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_11.pdf"
             },
             {
                 "name": "MS - 11",
-                "href": "https://drive.google.com/file/d/1FCGz8XY2oOVzvsaCkd4H9Vs-WHYfICyb/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_11.pdf"
             },
             {
                 "name": "QP - 12",
-                "href": "https://drive.google.com/file/d/1HlgDSaBUa5OjaqHfsEeNS7IRCFHJ1Hss/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_12.pdf"
             },
             {
                 "name": "MS - 12",
-                "href": "https://drive.google.com/file/d/1HlgDSaBUa5OjaqHfsEeNS7IRCFHJ1Hss/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_12.pdf"
             },
             {
                 "name": "QP - 13",
-                "href": "https://drive.google.com/file/d/1UOsLHcZ6c1oG2wEW0hHHcyztp5XtlSR4/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_13.pdf"
             },
             {
                 "name": "MS - 13",
-                "href": "https://drive.google.com/file/d/1UOsLHcZ6c1oG2wEW0hHHcyztp5XtlSR4/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_13.pdf"
+            },
+            {
+                "name": "QP - 14",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_14.pdf"
+            },
+            {
+                "name": "MS - 14",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_14.pdf"
             }
         ]
     },
     {
         "subject": "Paper 2",
         "cols": 3,
-        "exams": [
+        "pdf_files": [
             {
                 "name": "QP - 21",
-                "href": "https://drive.google.com/file/d/1yjO15hDvAPBBmA77Z4PMfqUTe3Z9nJef/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_21.pdf"
             },
             {
                 "name": "MS - 21",
-                "href": "https://drive.google.com/file/d/1yjO15hDvAPBBmA77Z4PMfqUTe3Z9nJef/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_21.pdf"
             },
             {
-                "name": "IP - 21",
-                "href": "https://drive.google.com/file/d/1yjO15hDvAPBBmA77Z4PMfqUTe3Z9nJef/preview?usp=drive_link"
+                "name": "IN - 21",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_in_21.pdf"
             },
             {
                 "name": "QP - 22",
-                "href": "https://drive.google.com/file/d/15wCzJ1GHjSb4G9r0Bu7aSevv71sOLzex/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_22.pdf"
             },
             {
                 "name": "MS - 22",
-                "href": "https://drive.google.com/file/d/15wCzJ1GHjSb4G9r0Bu7aSevv71sOLzex/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_22.pdf"
             },
             {
-                "name": "IP - 21",
-                "href": "https://drive.google.com/file/d/15wCzJ1GHjSb4G9r0Bu7aSevv71sOLzex/preview?usp=drive_link"
+                "name": "IN - 22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_in_22.pdf"
             },
             {
                 "name": "QP - 23",
-                "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_23.pdf"
             },
             {
                 "name": "MS - 23",
-                "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_23.pdf"
             },
             {
-                "name": "IP - 23",
-                "href": "https://drive.google.com/file/d/16MlS5Z8ytA8z6yfyNEhFi5EIz5R92YVs/preview?usp=drive_link"
+                "name": "IN - 23",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_in_23.pdf"
+            },
+            {
+                "name": "QP - 24",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_24.pdf"
+            },
+            {
+                "name": "MS - 24",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_24.pdf"
+            },
+            {
+                "name": "IN - 24",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_in_24.pdf"
             }
         ]
     },
     {
         "subject": "Paper 3",
         "cols": 2,
-        "exams": [
+        "pdf_files": [
             {
                 "name": "QP - 31",
-                "href": "https://drive.google.com/file/d/1lPJBFJSX5ruKvqfmwO3GZkIQ1RXk-vZB/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_31.pdf"
             },
             {
                 "name": "MS - 31",
-                "href": "https://drive.google.com/file/d/1lPJBFJSX5ruKvqfmwO3GZkIQ1RXk-vZB/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_31.pdf"
             },
             {
                 "name": "QP - 32",
-                "href": "https://drive.google.com/file/d/1yILiJaumGJ4BlaQtZ7wlUrUtrMi4OrX9/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_32.pdf"
             },
             {
                 "name": "MS - 32",
-                "href": "https://drive.google.com/file/d/1yILiJaumGJ4BlaQtZ7wlUrUtrMi4OrX9/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_32.pdf"
             },
             {
                 "name": "QP - 33",
-                "href": "https://drive.google.com/file/d/1ycmQS-ggeiSaACrP2P0mP1wTsIdYpS5N/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_33.pdf"
             },
             {
                 "name": "MS - 33",
-                "href": "https://drive.google.com/file/d/1ycmQS-ggeiSaACrP2P0mP1wTsIdYpS5N/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_33.pdf"
+            },
+            {
+                "name": "QP - 34",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_34.pdf"
+            },
+            {
+                "name": "MS - 34",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_34.pdf"
             }
         ]
     },
     {
         "subject": "Paper 4",
-        "cols": 2,
-        "exams": [
+        "cols": 3,
+        "pdf_files": [
             {
                 "name": "QP - 41",
-                "href": "https://drive.google.com/file/d/1Nu1qE0SSjzXHqaNBOdTk_kWJ9E4RioWd/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_41.pdf"
             },
             {
                 "name": "MS - 41",
-                "href": "https://drive.google.com/file/d/1Nu1qE0SSjzXHqaNBOdTk_kWJ9E4RioWd/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_41.pdf"
+            },
+            {
+                "name": "SF - 41",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_sf_41.pdf"
             },
             {
                 "name": "QP - 42",
-                "href": "https://drive.google.com/file/d/1JhUXMy76FuOb1Pa3fCzSnmPwfvNQmzNl/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_42.pdf"
             },
             {
                 "name": "MS - 42",
-                "href": "https://drive.google.com/file/d/1JhUXMy76FuOb1Pa3fCzSnmPwfvNQmzNl/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_42.pdf"
+            },
+            {
+                "name": "SF - 42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_sf_42.pdf"
             },
             {
                 "name": "QP - 43",
-                "href": "https://drive.google.com/file/d/1rljUOauJxz_fOs3E4Daqyllz3SE7iVld/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_43.pdf"
             },
             {
                 "name": "MS - 43",
-                "href": "https://drive.google.com/file/d/1rljUOauJxz_fOs3E4Daqyllz3SE7iVld/preview?usp=drive_link"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_43.pdf"
+            },
+            {
+                "name": "SF - 43",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_sf_43.pdf"
+            },
+            {
+                "name": "QP - 44",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_qp_44.pdf"
+            },
+            {
+                "name": "MS - 44",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_ms_44.pdf"
+            },
+            {
+                "name": "SF - 44",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2023/9618_w23_sf_44.pdf"
             }
         ]
     }

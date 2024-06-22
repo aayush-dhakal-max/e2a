@@ -1,0 +1,186 @@
+[
+    {
+        "subject": "Paper 1",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 11",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_11.pdf"
+            },
+            {
+                "name": "MS - 11",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_11.pdf"
+            },
+            {
+                "name": "QP - 12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_12.pdf"
+            },
+            {
+                "name": "MS - 12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_12.pdf"
+            },
+            {
+                "name": "QP - 13",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_13.pdf"
+            },
+            {
+                "name": "MS - 13",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_13.pdf"
+            },
+            {
+                "name": "QP - 14",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_14.pdf"
+            },
+            {
+                "name": "MS - 14",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_14.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 2",
+        "cols": 3,
+        "pdf_files": [
+            {
+                "name": "QP - 21",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_21.pdf"
+            },
+            {
+                "name": "MS - 21",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_21.pdf"
+            },
+            {
+                "name": "IN - 21",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_in_21.pdf"
+            },
+            {
+                "name": "QP - 22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_22.pdf"
+            },
+            {
+                "name": "MS - 22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_22.pdf"
+            },
+            {
+                "name": "IN - 22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_in_22.pdf"
+            },
+            {
+                "name": "QP - 23",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_23.pdf"
+            },
+            {
+                "name": "MS - 23",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_23.pdf"
+            },
+            {
+                "name": "IN - 23",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_in_23.pdf"
+            },
+            {
+                "name": "QP - 24",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_24.pdf"
+            },
+            {
+                "name": "MS - 24",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_24.pdf"
+            },
+            {
+                "name": "IN - 24",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_in_24.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 3",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_31.pdf"
+            },
+            {
+                "name": "MS - 31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_31.pdf"
+            },
+            {
+                "name": "QP - 32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_32.pdf"
+            },
+            {
+                "name": "MS - 32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_32.pdf"
+            },
+            {
+                "name": "QP - 33",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_33.pdf"
+            },
+            {
+                "name": "MS - 33",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_33.pdf"
+            },
+            {
+                "name": "QP - 34",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_34.pdf"
+            },
+            {
+                "name": "MS - 34",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_34.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 4",
+        "cols": 3,
+        "pdf_files": [
+            {
+                "name": "QP - 41",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_41.pdf"
+            },
+            {
+                "name": "MS - 41",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_41.pdf"
+            },
+            {
+                "name": "SF - 41",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_41.pdf"
+            },
+            {
+                "name": "QP - 42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_42.pdf"
+            },
+            {
+                "name": "MS - 42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_42.pdf"
+            },
+            {
+                "name": "SF - 42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_42.pdf"
+            },
+            {
+                "name": "QP - 43",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_43.pdf"
+            },
+            {
+                "name": "MS - 43",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_43.pdf"
+            },
+            {
+                "name": "SF - 43",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_43.pdf"
+            },
+            {
+                "name": "QP - 44",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_44.pdf"
+            },
+            {
+                "name": "MS - 44",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_44.pdf"
+            },
+            {
+                "name": "SF - 44",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_44.pdf"
+            }
+        ]
+    }
+]

@@ -3,7 +3,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { useEffect, useState } from "react";
-import papers from "@/data/computerPPData.json";
+import papers from "@/data/computer/9618_may_june_2021.json";
 import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
 
@@ -72,24 +72,24 @@ export default function Component() {
                               paper.cols == 2 ? "grid-cols-2" : "grid-cols-3"
                             } CollapsibleContent`}
                           >
-                            {paper.exams.map((exam) => (
+                            {paper.pdf_files.map((pdf_file) => (
                               <Link
                                 onClick={() => {
-                                  setPdfLink(exam.href);
+                                  setPdfLink(pdf_file.href);
                                   setOpen(false);
-                                  setActiveLink(exam.name);
+                                  setActiveLink(pdf_file.name);
                                 }}
-                                key={exam.name}
+                                key={pdf_file.name}
                                 href={"#"}
                                 className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-lg tracking-wide font-medium transition-colors duration-400 
                               ${
-                                activeLink === exam.name
+                                activeLink === pdf_file.name
                                   ? "bg-gray-800 text-white"
                                   : "hover:bg-gray-800 hover:text-white"
                               }`}
                                 prefetch={false}
                               >
-                                {exam.name}
+                                {pdf_file.name}
                               </Link>
                             ))}
                           </CollapsibleContent>
@@ -122,23 +122,23 @@ export default function Component() {
                   </CollapsibleTrigger>
 
                   <CollapsibleContent className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}>
-                    {paper.exams.map((exam) => (
+                    {paper.pdf_files.map((pdf_file) => (
                       <Link
                         onClick={() => {
-                          setPdfLink(exam.href);
-                          setActiveLink(exam.name);
+                          setPdfLink(pdf_file.href);
+                          setActiveLink(pdf_file.name);
                         }}
-                        key={exam.name}
+                        key={pdf_file.name}
                         href={"#"}
                         className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-xl tracking-wide font-medium transition-colors duration-400 
                         ${
-                          activeLink === exam.name
+                          activeLink === pdf_file.name
                             ? "bg-gray-800 text-white"
                             : "hover:bg-gray-800 hover:text-white"
                         }`}
                         prefetch={false}
                       >
-                        {exam.name}
+                        {pdf_file.name}
                       </Link>
                     ))}
                   </CollapsibleContent>
@@ -148,8 +148,14 @@ export default function Component() {
           </ScrollArea>
         </div>
         <div className="bg-gray-100 rounded-lg overflow-hidden w-full">
-          <div className="md:h-[calc(100vh-160px)] sm:h-[calc(100vh-100px)] h-[calc(100vh-250px)]  w-full">
-            <iframe src={`${PdfLink}`} frameBorder="0" allowFullScreen className="w-full h-full" />
+          <div className="h-[82svh] w-full">
+            <iframe
+              src={`${PdfLink}`}
+              width={"100%"}
+              height={"100%"}
+              allowFullScreen
+              className="w-full h-full"
+            />
           </div>
         </div>
       </div>
