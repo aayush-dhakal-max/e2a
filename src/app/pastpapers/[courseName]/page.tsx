@@ -57,7 +57,11 @@ export default function Component() {
                     </div>
                   </CollapsibleTrigger>
 
-                  <CollapsibleContent className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}>
+                  <CollapsibleContent
+                    className={`grid gap-2 ${
+                      paper.cols == 3 ? "grid-cols-3" : "grid-cols-2"
+                    } CollapsibleContent`}
+                  >
                     {paper.pdf_files.map((pdf_file) => (
                       <Link
                         onClick={() => {
@@ -104,7 +108,11 @@ export default function Component() {
                     </div>
                   </CollapsibleTrigger>
 
-                  <CollapsibleContent className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}>
+                  <CollapsibleContent
+                    className={`grid gap-2 ${
+                      paper.cols == 3 ? "grid-cols-3" : "grid-cols-2"
+                    } CollapsibleContent`}
+                  >
                     {paper.pdf_files.map((pdf_file) => (
                       <Link
                         onClick={() => {
