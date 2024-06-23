@@ -5,12 +5,13 @@ import { useEffect, useState } from "react";
 import papers from "@/data/computer/9618_may_june_2021.json";
 import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
-import { Drawer, DrawerContent, DrawerTrigger, DrawerOverlay, DrawerPortal } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 export default function Component() {
-  const [PdfLink, setPdfLink] = useState("");
+  const [PdfLink, setPdfLink] = useState(
+    "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_11.pdf"
+  );
   const [open, setOpen] = useState(false);
 
   // Active link visual in the sidebar
@@ -40,65 +41,49 @@ export default function Component() {
       <div className="grid grid-cols-1 md:grid-cols-[25vw_1fr] sm:grid-cols-1 lg:grid-cols-1[20vw_1fr] gap-2">
         {/* Mobile view */}
         <div className="md:hidden block">
-          <Drawer open={open} onOpenChange={setOpen} direction="left">
-            <DrawerTrigger asChild>
-              <HamburgerMenuIcon className="block h-8 w-8" aria-hidden="true" />
-              {/* <Button>Open</Button> */}
-            </DrawerTrigger>
-            <DrawerPortal>
-              <DrawerOverlay className="fixed inset-0 bg-black/5" />
-              <DrawerContent className="bg-white flex flex-col h-full w-[300px] max-w-[70vw] mt-24 fixed bottom-0 right-0">
-                <div className="p-2 md:p-4 bg-white flex-1 h-full ">
-                  <ScrollArea className="h-full md:border-none rounded-lg drop-shadow-lg border-black md:border-2 ">
-                    <div className="p-2 md:p-4 space-y-2 bg-gray-0">
-                      {papers.map((paper) => (
-                        <Collapsible
-                          key={paper.subject}
-                          className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm"
-                        >
-                          <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
-                            <div className="flex items-center justify-between space-x-4">
-                              <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
-                              <Button size="sm" variant="ghost">
-                                <ChevronDownIcon className="h-6 w-6  transition-transform [&[data-state=open]]:rotate-180" />
-                              </Button>
-                            </div>
-                          </CollapsibleTrigger>
-
-                          <CollapsibleContent
-                            className={`grid gap-2 ${
-                              paper.cols == 2 ? "grid-cols-2" : "grid-cols-3"
-                            } CollapsibleContent`}
-                          >
-                            {paper.pdf_files.map((pdf_file) => (
-                              <Link
-                                onClick={() => {
-                                  setPdfLink(pdf_file.href);
-                                  setOpen(false);
-                                  setActiveLink(pdf_file.name);
-                                }}
-                                key={pdf_file.name}
-                                href={{ query: { paper: pdf_file.paper } }}
-                                className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-lg tracking-wide font-medium transition-colors duration-400 
-                              ${
-                                activeLink === pdf_file.name
-                                  ? "bg-gray-800 text-white"
-                                  : "hover:bg-gray-800 hover:text-white"
-                              }`}
-                                prefetch={false}
-                              >
-                                {pdf_file.name}
-                              </Link>
-                            ))}
-                          </CollapsibleContent>
-                        </Collapsible>
-                      ))}
+          <ScrollArea className="min-h-[100vh] drop-shadow-lg border-black rounded-lg">
+            <div className="p-4 space-y-2 bg-gray-0">
+              {papers.map((paper) => (
+                <Collapsible
+                  key={paper.subject}
+                  className="rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm"
+                >
+                  <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
+                    <div className="flex items-center justify-between space-x-4">
+                      <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
+                      <Button size="sm" variant="ghost">
+                        <ChevronDownIcon className="h-6 w-6  transition-transform [&[data-state=open]]:rotate-180" />
+                      </Button>
                     </div>
-                  </ScrollArea>
-                </div>
-              </DrawerContent>
-            </DrawerPortal>
-          </Drawer>
+                  </CollapsibleTrigger>
+
+                  <CollapsibleContent className={`grid gap-2 grid-cols-${paper.cols} CollapsibleContent`}>
+                    {paper.pdf_files.map((pdf_file) => (
+                      <Link
+                        onClick={() => {
+                          setPdfLink(pdf_file.href);
+                          setActiveLink(pdf_file.name);
+                        }}
+                        target="_blank"
+                        key={pdf_file.name}
+                        href={pdf_file.href}
+                        // href={{ query: { paper: pdf_file.paper } }}
+                        className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-xl tracking-wide font-medium transition-colors duration-400 
+                        ${
+                          activeLink === pdf_file.name
+                            ? "bg-gray-800 text-white"
+                            : "hover:bg-gray-800 hover:text-white"
+                        }`}
+                        prefetch={false}
+                      >
+                        {pdf_file.name}
+                      </Link>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
+              ))}
+            </div>
+          </ScrollArea>
         </div>
 
         {/* Desktop view */}
@@ -145,7 +130,7 @@ export default function Component() {
             </div>
           </ScrollArea>
         </div>
-        <div className="bg-gray-100 rounded-lg overflow-hidden w-full">
+        <div className="bg-gray-100 rounded-lg md:block hidden overflow-hidden w-full">
           <div className="h-[82svh] w-full">
             <iframe
               src={`${PdfLink}`}
