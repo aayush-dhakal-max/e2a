@@ -25,13 +25,21 @@ export function Hero() {
           </p>
 
           {/* Enroll now button in hero section */}
-          <div className="md:py-0 py-6">
+          <div className="md:py-0 py-6 flex gap-2 justify-center">
             {/* <AlertDialog>
               <AlertDialogTrigger asChild> */}
             <Link
+              href={"/pastpapers"}
+              className={`md:hidden inline-flex items-center justify-center bg-[#001942] text-white text-xl pt-3 py-2 px-3
+                 rounded-full shadow-md hover:bg-[#3262af] focus:outline-none ${teko2.className}`}
+              prefetch={false}
+            >
+              Past Papers
+            </Link>
+            <Link
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
-              className={`md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-xl py-2 px-4
+              className={`md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-xl pt-3 py-2 px-3
                  rounded-full shadow-md hover:bg-[#591f35] focus:outline-none ${teko2.className}`}
               prefetch={false}
             >
