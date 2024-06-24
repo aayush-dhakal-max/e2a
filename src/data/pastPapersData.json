@@ -1,5 +1,217 @@
 [
     {
+        "subject": "Accounting - 9706",
+        "papers": [
+            {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2023 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2022 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
+                "href": "#"
+            }
+        ]
+    },
+    {
+        "subject": "Biology - 9700",
+        "papers": [
+            {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2023 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2022 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
+                "href": "#"
+            }
+        ]
+    },
+    {
+        "subject": "Business - 9609",
+        "papers": [
+            {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2023 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2022 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
+                "href": "#"
+            }
+        ]
+    },
+    {
+        "subject": "Chemistry - 9701",
+        "papers": [
+            {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2023 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2022 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2021 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
+                "href": "#"
+            }
+        ]
+    },
+    {
         "subject": "Computer Science - 9618",
         "papers": [
             {
@@ -29,14 +241,22 @@
         ]
     },
     {
-        "subject": "Chemistry - 9701",
+        "subject": "Economics - 9702",
         "papers": [
+            {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
             {
                 "year": "2023 - May/June",
                 "href": "#"
             },
             {
                 "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
                 "href": "#"
             },
             {
@@ -48,11 +268,27 @@
                 "href": "#"
             },
             {
+                "year": "2021 - Feb/Mar",
+                "href": "#"
+            },
+            {
                 "year": "2021 - May/June",
                 "href": "#"
             },
             {
                 "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
                 "href": "#"
             }
         ]
@@ -61,11 +297,19 @@
         "subject": "Mathematics - 9709",
         "papers": [
             {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
+            {
                 "year": "2023 - May/June",
                 "href": "#"
             },
             {
                 "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
                 "href": "#"
             },
             {
@@ -77,11 +321,27 @@
                 "href": "#"
             },
             {
+                "year": "2021 - Feb/Mar",
+                "href": "#"
+            },
+            {
                 "year": "2021 - May/June",
                 "href": "#"
             },
             {
                 "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
                 "href": "#"
             }
         ]
@@ -90,11 +350,19 @@
         "subject": "Physics - 9702",
         "papers": [
             {
+                "year": "2023 - Feb/Mar",
+                "href": "#"
+            },
+            {
                 "year": "2023 - May/June",
                 "href": "#"
             },
             {
                 "year": "2023 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2022 - Feb/Mar",
                 "href": "#"
             },
             {
@@ -106,32 +374,7 @@
                 "href": "#"
             },
             {
-                "year": "2021 - May/June",
-                "href": "#"
-            },
-            {
-                "year": "2021 - Oct/Nov",
-                "href": "#"
-            }
-        ]
-    },
-    {
-        "subject": "Economics - 9702",
-        "papers": [
-            {
-                "year": "2023 - May/June",
-                "href": "#"
-            },
-            {
-                "year": "2023 - Oct/Nov",
-                "href": "#"
-            },
-            {
-                "year": "2022 - May/June",
-                "href": "#"
-            },
-            {
-                "year": "2022 - Oct/Nov",
+                "year": "2021 - Feb/Mar",
                 "href": "#"
             },
             {
@@ -140,6 +383,18 @@
             },
             {
                 "year": "2021 - Oct/Nov",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Feb/Mar",
+                "href": "#"
+            },
+            {
+                "year": "2020 - May/June",
+                "href": "#"
+            },
+            {
+                "year": "2020 - Oct/Nov",
                 "href": "#"
             }
         ]

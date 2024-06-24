@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "past papers for A Level students",
-  description: "Past papers for A Level students. Get access to past papers for A Level subjects.",
+  title: "Past Papers for A Level Students",
+  description: "Access past papers for A Level subjects to enhance your preparation.",
   // viewport: "width=device-width, initial-scale=1.0",
 };
 

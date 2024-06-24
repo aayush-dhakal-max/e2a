@@ -9,11 +9,9 @@ import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 export default function Component() {
-  // console.log(mypapers);
   const [papers, setPapers] = useState([]);
   const pathname = usePathname();
   const paperpath = `${pathname.split("/")[2]}.json`;
-  console.log(paperpath);
 
   const [PdfLink, setPdfLink] = useState("");
   const [activeLink, setActiveLink] = useState("");
@@ -30,7 +28,6 @@ export default function Component() {
         .then((module) => {
           const papers = module.default;
           setPapers(papers);
-          console.log(papers);
         })
         .catch((err) => {
           // toast.error("Failed to send email", { duration: 5000, position: "top-center" });
