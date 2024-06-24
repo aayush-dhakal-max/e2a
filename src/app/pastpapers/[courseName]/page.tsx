@@ -17,6 +17,14 @@ export default function Component() {
   // Active link visual in the sidebar
   const [activeLink, setActiveLink] = useState("");
 
+  // collapsible open state only one open
+  const [openCollapsible, setOpenCollapsible] = useState<string | null>(null);
+
+  const toggleCollapsible = (subject: string) => {
+    // If the same collapsible is clicked again, close it, otherwise open the new one
+    setOpenCollapsible(openCollapsible === subject ? null : subject);
+  };
+
   useEffect(() => {
     console.log(activeLink);
   }, [activeLink]);
@@ -41,18 +49,27 @@ export default function Component() {
       <div className="grid grid-cols-1 md:grid-cols-[25vw_1fr] sm:grid-cols-1 lg:grid-cols-1[20vw_1fr] gap-2">
         {/* Mobile view */}
         <div className="md:hidden block">
-          <ScrollArea className="min-h-[100vh] drop-shadow-lg border-black rounded-lg">
+          <ScrollArea className="min-h-[100vh] border-black rounded-lg">
             <div className="p-4 space-y-2 bg-gray-0">
               {papers.map((paper) => (
                 <Collapsible
                   key={paper.subject}
-                  className="rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm"
+                  className="rounded-lg border border-gray-200 bg-gray-100 p-4"
+                  open={openCollapsible === paper.subject}
                 >
-                  <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
+                  <CollapsibleTrigger
+                    onClick={() => toggleCollapsible(paper.subject)}
+                    asChild
+                    className="hover:cursor-pointer py-2 "
+                  >
                     <div className="flex items-center justify-between space-x-4">
                       <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
                       <Button size="sm" variant="ghost">
-                        <ChevronDownIcon className="h-6 w-6  transition-transform [&[data-state=open]]:rotate-180" />
+                        <ChevronDownIcon
+                          className={`h-6 w-6 transition-transform ${
+                            openCollapsible === paper.subject ? "rotate-180" : ""
+                          }`}
+                        />
                       </Button>
                     </div>
                   </CollapsibleTrigger>
@@ -97,13 +114,22 @@ export default function Component() {
               {papers.map((paper) => (
                 <Collapsible
                   key={paper.subject}
-                  className="rounded-lg border border-gray-200 bg-gray-50 p-4 shadow-sm"
+                  className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm"
+                  open={openCollapsible === paper.subject}
                 >
-                  <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
+                  <CollapsibleTrigger
+                    onClick={() => toggleCollapsible(paper.subject)}
+                    asChild
+                    className="hover:cursor-pointer py-2 "
+                  >
                     <div className="flex items-center justify-between space-x-4">
                       <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
                       <Button size="sm" variant="ghost">
-                        <ChevronDownIcon className="h-6 w-6  transition-transform [&[data-state=open]]:rotate-180" />
+                        <ChevronDownIcon
+                          className={`h-6 w-6 transition-transform ${
+                            openCollapsible === paper.subject ? "rotate-180" : ""
+                          }`}
+                        />
                       </Button>
                     </div>
                   </CollapsibleTrigger>

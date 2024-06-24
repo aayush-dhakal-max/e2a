@@ -1,11 +1,20 @@
+"use client";
 import Navbar from "@/components/component/Navbar";
 import { Button } from "@/components/ui/button";
 import { CollapsibleTrigger, CollapsibleContent, Collapsible } from "@/components/ui/collapsible";
 import Link from "next/link";
 import pastPapersData from "@/data/pastPapersData.json";
 import { teko2 } from "@/lib/utils";
+import { useState } from "react";
 
 export default function Component() {
+  const [openCollapsible, setOpenCollapsible] = useState<string | null>(null);
+
+  const toggleCollapsible = (subject: string) => {
+    // If the same collapsible is clicked again, close it, otherwise open the new one
+    setOpenCollapsible(openCollapsible === subject ? null : subject);
+  };
+
   return (
     <>
       <Navbar />
@@ -19,13 +28,22 @@ export default function Component() {
           {pastPapersData.map((subjectData, index) => (
             <Collapsible
               key={subjectData.subject}
-              className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm"
+              className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm "
+              open={openCollapsible === subjectData.subject} // Control open state based on the current state
             >
-              <CollapsibleTrigger asChild className="hover:cursor-pointer py-2 ">
+              <CollapsibleTrigger
+                asChild
+                className="hover:cursor-pointer py-2 "
+                onClick={() => toggleCollapsible(subjectData.subject)}
+              >
                 <div className="flex items-center justify-between space-x-4">
                   <h2 className="text-2xl font-semibold">{subjectData.subject}</h2>
                   <Button size="sm" variant="ghost">
-                    <ChevronDownIcon className="h-6 w-6 transition-transform [&[data-state=open]]:rotate-180" />
+                    <ChevronDownIcon
+                      className={`h-6 w-6 transition-transform ${
+                        openCollapsible === subjectData.subject ? "rotate-180" : ""
+                      }`}
+                    />
                   </Button>
                 </div>
               </CollapsibleTrigger>
