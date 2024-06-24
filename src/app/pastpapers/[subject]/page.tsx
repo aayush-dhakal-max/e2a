@@ -7,7 +7,6 @@ import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { toast } from "sonner";
 
 export default function Component() {
   // console.log(mypapers);
@@ -34,7 +33,7 @@ export default function Component() {
           console.log(papers);
         })
         .catch((err) => {
-          toast.error("Failed to send email", { duration: 5000, position: "top-center" });
+          // toast.error("Failed to send email", { duration: 5000, position: "top-center" });
           console.log(err);
         });
     };
