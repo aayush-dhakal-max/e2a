@@ -15,14 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <title>Past Papers</title>
-      </head>
-      <body className={teko2.className}>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <body className={teko2.className}>
+      <Navbar />
+      {children}
+    </body>
   );
 }

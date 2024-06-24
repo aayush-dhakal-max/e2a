@@ -1,48 +1,48 @@
 "use client";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import papers from "@/data/computer/9618_may_june_2021.json";
 import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { toast } from "sonner";
 
 export default function Component() {
-  const [PdfLink, setPdfLink] = useState(
-    "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_11.pdf"
-  );
-  const [open, setOpen] = useState(false);
+  // console.log(mypapers);
+  const [papers, setPapers] = useState([]);
+  const pathname = usePathname();
+  const paperpath = `${pathname.split("/")[2]}.json`;
+  console.log(paperpath);
 
-  // Active link visual in the sidebar
+  const [PdfLink, setPdfLink] = useState("");
   const [activeLink, setActiveLink] = useState("");
 
-  // collapsible open state only one open
   const [openCollapsible, setOpenCollapsible] = useState<string | null>(null);
 
   const toggleCollapsible = (subject: string) => {
-    // If the same collapsible is clicked again, close it, otherwise open the new one
     setOpenCollapsible(openCollapsible === subject ? null : subject);
   };
 
   useEffect(() => {
-    console.log(activeLink);
-  }, [activeLink]);
+    const getSetPapers = async () => {
+      await import(`@/data/${paperpath}`)
+        .then((module) => {
+          const papers = module.default;
+          setPapers(papers);
+          console.log(papers);
+        })
+        .catch((err) => {
+          toast.error("Failed to send email", { duration: 5000, position: "top-center" });
+          console.log(err);
+        });
+    };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setOpen(true);
-      } else {
-        setOpen(false);
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+    getSetPapers();
+
+    // console.log(activeLink);
+  }, [paperpath]);
 
   return (
     <div className={`md:mx-0 lg:mx-16 p-2 md:mt-32 ${teko2.className}`}>
@@ -51,7 +51,7 @@ export default function Component() {
         <div className="md:hidden block">
           <ScrollArea className="min-h-[100vh] border-black rounded-lg">
             <div className="p-4 space-y-2 bg-gray-0">
-              {papers.map((paper) => (
+              {papers.map((paper: any) => (
                 <Collapsible
                   key={paper.subject}
                   className="rounded-lg border border-gray-200 bg-gray-100 p-4"
@@ -79,7 +79,7 @@ export default function Component() {
                       paper.cols == 3 ? "grid-cols-3" : "grid-cols-2"
                     } CollapsibleContent`}
                   >
-                    {paper.pdf_files.map((pdf_file) => (
+                    {paper.pdf_files.map((pdf_file: any) => (
                       <Link
                         onClick={() => {
                           setPdfLink(pdf_file.href);
@@ -110,8 +110,8 @@ export default function Component() {
         {/* Desktop view */}
         <div className={`rounded-lg overflow-hidden md:block hidden`}>
           <ScrollArea className="h-[calc(100vh-160px)] drop-shadow-lg border-black rounded-lg">
-            <div className="p-4 space-y-2 bg-gray-0">
-              {papers.map((paper) => (
+            <div className="p-4 space-y-3 bg-gray-0">
+              {papers.map((paper: any) => (
                 <Collapsible
                   key={paper.subject}
                   className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm"
@@ -139,7 +139,7 @@ export default function Component() {
                       paper.cols == 3 ? "grid-cols-3" : "grid-cols-2"
                     } CollapsibleContent`}
                   >
-                    {paper.pdf_files.map((pdf_file) => (
+                    {paper.pdf_files.map((pdf_file: any) => (
                       <Link
                         onClick={() => {
                           setPdfLink(pdf_file.href);
@@ -165,6 +165,7 @@ export default function Component() {
           </ScrollArea>
         </div>
         <div className="bg-gray-100 rounded-lg md:block hidden overflow-hidden w-full">
+          {/* <h1 className="z-50 text-7xl">Open a paper to view</h1> */}
           <div className="h-[82svh] w-full">
             <iframe
               src={`${PdfLink}`}
