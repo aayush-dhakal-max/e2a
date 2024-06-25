@@ -3,7 +3,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ChevronDownIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { teko2 } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -30,14 +30,10 @@ export default function Component() {
           setPapers(papers);
         })
         .catch((err) => {
-          // toast.error("Failed to send email", { duration: 5000, position: "top-center" });
           console.log(err);
         });
     };
-
     getSetPapers();
-
-    // console.log(activeLink);
   }, [paperpath]);
 
   return (

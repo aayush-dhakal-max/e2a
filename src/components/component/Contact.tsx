@@ -2,7 +2,6 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { CheckIcon, MobileIcon, EnvelopeClosedIcon, SewingPinFilledIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import { toast } from "sonner";

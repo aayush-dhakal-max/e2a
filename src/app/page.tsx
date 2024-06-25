@@ -4,7 +4,6 @@ import Navbar from "@/components/component/Navbar";
 import Contact from "@/components/component/Contact";
 import Testimonials from "@/components/component/Testimonials";
 import { Hero } from "@/components/component/Hero";
-import Sidebar from "@/components/component/Sidebar";
 import { Toaster } from "@/components/ui/sonner";
 import OurServices from "@/components/component/OurServices";
 

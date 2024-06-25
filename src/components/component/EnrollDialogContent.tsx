@@ -1,14 +1,12 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import {
-  AlertDialogTrigger,
   AlertDialogTitle,
   AlertDialogDescription,
   AlertDialogHeader,
   AlertDialogCancel,
   AlertDialogFooter,
   AlertDialogContent,
-  AlertDialog,
 } from "@/components/ui/alert-dialog";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
