@@ -75,14 +75,14 @@ export default function Component() {
                       paper.cols == 3 ? "grid-cols-3" : "grid-cols-2"
                     } CollapsibleContent`}
                   >
-                    {paper.pdf_files.map((pdf_file: any) => (
+                    {paper.pdf_files.map((pdf_file: any, index: any) => (
                       <Link
                         onClick={() => {
                           setPdfLink(pdf_file.href);
                           setActiveLink(pdf_file.name);
                         }}
                         target="_blank"
-                        key={pdf_file.name}
+                        key={index}
                         href={pdf_file.href}
                         // href={{ query: { paper: pdf_file.paper } }}
                         className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-xl tracking-wide font-medium transition-colors duration-400 
@@ -107,9 +107,9 @@ export default function Component() {
         <div className={`rounded-lg overflow-hidden md:block hidden`}>
           <ScrollArea className="h-[calc(100vh-160px)] drop-shadow-lg border-black rounded-lg">
             <div className="p-4 space-y-3 bg-gray-0">
-              {papers.map((paper: any) => (
+              {papers.map((paper: any, index: any) => (
                 <Collapsible
-                  key={paper.subject}
+                  key={index}
                   className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm"
                   open={openCollapsible === paper.subject}
                 >

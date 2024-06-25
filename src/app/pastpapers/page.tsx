@@ -27,7 +27,7 @@ export default function Component() {
         <div className="space-y-6">
           {pastPapersData.map((subjectData, index) => (
             <Collapsible
-              key={subjectData.subject}
+              key={index}
               className="rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-sm "
               open={openCollapsible === subjectData.subject} // Control open state based on the current state
             >
@@ -49,9 +49,9 @@ export default function Component() {
               </CollapsibleTrigger>
 
               <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
-                {subjectData.papers.map((paper, paperIndex) => (
+                {subjectData.papers.map((paper, index) => (
                   <Link
-                    key={subjectData.subject + paperIndex}
+                    key={index}
                     className="rounded-md bg-gray-300 px-3 py-3 text-lg font-medium transition-colors hover:bg-gray-800 hover:text-white"
                     href={paper.href}
                   >
