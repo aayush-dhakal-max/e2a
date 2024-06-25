@@ -1,7 +1,7 @@
 import React from "react";
 import { CardContent, CardFooter, Card } from "@/components/ui/card";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 import { teko2 } from "@/lib/utils";

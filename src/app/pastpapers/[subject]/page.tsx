@@ -19,7 +19,17 @@ export default function Component() {
   const [openCollapsible, setOpenCollapsible] = useState<string | null>(null);
 
   const toggleCollapsible = (subject: string) => {
-    setOpenCollapsible(openCollapsible === subject ? null : subject);
+    if (openCollapsible) {
+      setOpenCollapsible(null);
+
+      if (openCollapsible !== subject) {
+        setTimeout(() => {
+          setOpenCollapsible(subject);
+        }, 200);
+      }
+    } else {
+      setOpenCollapsible(subject);
+    }
   };
 
   useEffect(() => {
