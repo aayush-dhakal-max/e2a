@@ -5,29 +5,30 @@ import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 import { teko2 } from "@/lib/utils";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 const testimonials = [
   {
     quote:
-      "I was struggling with A-level Physics, but the comprehensive course materials and past papers from this institution helped me turn things around. Highly recommended!",
+      "I had a decent concept of every topic by the end of course, thanks to Rikesh Sir's effective and interactive teaching. Frequent tests and feedback were very helpful.",
     name: "John Doe",
     avatarFallback: "JD",
   },
   {
     quote:
-      "I was struggling with A-level Physics, but the comprehensive course materials and past papers from this institution helped me turn things around. Highly recommended!",
+      "It helped me understand maths and not just rot learn the subject. I actually liked doing maths at the end because I knew how to do alot of questions. This course is excellent for students who want to improve their grades drastically. With full effort from both the sides, A* seemed like an easy goal.",
     name: "Jane Appleseed",
     avatarFallback: "JA",
   },
   {
     quote:
-      "I was struggling with A-level Physics, but the comprehensive course materials and past papers from this institution helped me turn things around. Highly recommended!",
+      "Even though a tutor typically just focuses on the syllabus content, my teacher here at e2a was an enthusiast for cybersecurity and  programming, who not only taught us the course contents but also sparked an interest for vast possibilities in the realm of computer science. Due to his knowledge and experience, he was able to share and simplify all the topics of CS(9618) which made them easy to understand. Also the company I was exposed to in e2a has been one of the most welcoming environment I had ever encountered.",
     name: "Tom Smith",
     avatarFallback: "TS",
   },
   {
     quote:
-      "I was struggling with A-level Physics, but the comprehensive course materials and past papers from this institution helped me turn things around. Highly recommended!",
+      "I had a great experience at E2A. The classes were interactive and encouraging. The small class size meant a lot of one-on-one time with the tutors, helping me grasp difficult content.",
     name: "Tom Smith",
     avatarFallback: "TS",
   },
@@ -53,7 +54,7 @@ const Testimonials = () => {
           </div>
           <Carousel
             plugins={[
-              Autoplay({ playOnInit: true, delay: 2500, stopOnFocusIn: true, stopOnInteraction: false }),
+              Autoplay({ playOnInit: true, delay: 2500, stopOnFocusIn: true, stopOnInteraction: true }),
             ]}
             opts={{ loop: true }}
             className="relative "
@@ -62,11 +63,20 @@ const Testimonials = () => {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem
                   key={index}
-                  className="h-[250px] md:max-w-[500px] flex flex-col justify-between md:basis-1/2 lg:basis-1/3 "
+                  // Updated className for responsiveness and consistent sizing
+                  className="flex flex-col justify-between md:basis-1/2 lg:basis-1/3"
                 >
-                  <Card key={index} className="md:h-fit sm:h-[200px] flex flex-col justify-between">
+                  <Card
+                    key={index}
+                    // Set a consistent height for all cards and make it responsive
+                    className="h-auto md:h-[250px] lg:h-[250px] flex flex-col pt-6 justify-between sm:h-[250px] w-full"
+                  >
                     <CardContent>
-                      <blockquote className="text-xl leading-snug mt-6">{testimonial.quote}</blockquote>
+                      <ScrollArea className="h-28">
+                        <blockquote className="text-xl leading-snug max-h-[220px]">
+                          {testimonial.quote}
+                        </blockquote>
+                      </ScrollArea>
                     </CardContent>
                     <CardFooter>
                       <div className="flex items-center space-x-4">
