@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import ADContent from "@/components/component/EnrollDialogContent";
-import { AlertDialogTrigger, AlertDialog } from "@/components/ui/alert-dialog";
 import { teko, teko2 } from "@/lib/utils";
 
 export function Hero() {
