@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { teko2 } from "@/lib/utils";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { Scrollbar } from "@radix-ui/react-scroll-area";
 
 const testimonials = [
   {
@@ -69,13 +70,14 @@ const Testimonials = () => {
                   <Card
                     key={index}
                     // Set a consistent height for all cards and make it responsive
-                    className="h-auto md:h-[250px] lg:h-[250px] flex flex-col pt-6 justify-between sm:h-[250px] w-full"
+                    className="h-auto md:h-[220px] lg:h-[220px] flex flex-col pt-6 justify-between sm:h-[220px] w-full"
                   >
                     <CardContent>
                       <ScrollArea className="h-28">
                         <blockquote className="text-xl leading-snug max-h-[220px]">
                           {testimonial.quote}
                         </blockquote>
+                        <ScrollBar />
                       </ScrollArea>
                     </CardContent>
                     <CardFooter>

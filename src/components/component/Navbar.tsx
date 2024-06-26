@@ -71,7 +71,7 @@ const Navbar = () => {
             >
               <FaInstagram className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
             </Link>
-            <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
+            <Link target="_blank" href={"https://www.tiktok.com/@e2alearningnepal"}>
               <FaTiktok className="h-6 w-6 text-blue-900 hover:text-gray-600" />
             </Link>
           </div>
@@ -185,7 +185,7 @@ const Navbar = () => {
               >
                 <FaInstagram className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
               </Link>
-              <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
+              <Link target="_blank" href={"https://www.tiktok.com/@e2alearningnepal"}>
                 <FaTiktok className="h-6 w-6 text-blue-900 hover:text-gray-600" />
               </Link>
             </div>
