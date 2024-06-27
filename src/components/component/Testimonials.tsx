@@ -6,7 +6,6 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { teko2 } from "@/lib/utils";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Scrollbar } from "@radix-ui/react-scroll-area";
 
 const testimonials = [
   {

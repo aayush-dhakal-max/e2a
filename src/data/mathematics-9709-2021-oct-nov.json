@@ -1,0 +1,229 @@
+[
+    {
+        "subject": "Paper 1",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 11",
+                "paper": "qp_11",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_11.pdf"
+            },
+            {
+                "name": "MS - 11",
+                "paper": "ms_11",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_11.pdf"
+            },
+            {
+                "name": "QP - 12",
+                "paper": "qp_12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_12.pdf"
+            },
+            {
+                "name": "MS - 12",
+                "paper": "ms_12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_12.pdf"
+            },
+            {
+                "name": "QP - 13",
+                "paper": "qp_13",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_13.pdf"
+            },
+            {
+                "name": "MS - 13",
+                "paper": "ms_13",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_13.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 2",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 21",
+                "paper": "qp_21",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_21.pdf"
+            },
+            {
+                "name": "MS - 21",
+                "paper": "ms_21",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_21.pdf"
+            },
+            {
+                "name": "QP - 22",
+                "paper": "qp_22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_22.pdf"
+            },
+            {
+                "name": "MS - 22",
+                "paper": "ms_22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_22.pdf"
+            },
+            {
+                "name": "QP - 23",
+                "paper": "qp_23",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_23.pdf"
+            },
+            {
+                "name": "MS - 23",
+                "paper": "ms_23",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_23.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 3",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 31",
+                "paper": "qp_31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_31.pdf"
+            },
+            {
+                "name": "MS - 31",
+                "paper": "ms_31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_31.pdf"
+            },
+            {
+                "name": "QP - 32",
+                "paper": "qp_32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_32.pdf"
+            },
+            {
+                "name": "MS - 32",
+                "paper": "ms_32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_32.pdf"
+            },
+            {
+                "name": "QP - 33",
+                "paper": "qp_33",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_33.pdf"
+            },
+            {
+                "name": "MS - 33",
+                "paper": "ms_33",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_33.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 4",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 41",
+                "paper": "qp_41",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_41.pdf"
+            },
+            {
+                "name": "MS - 41",
+                "paper": "ms_41",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_41.pdf"
+            },
+            {
+                "name": "QP - 42",
+                "paper": "qp_42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_42.pdf"
+            },
+            {
+                "name": "MS - 42",
+                "paper": "ms_42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_42.pdf"
+            },
+            {
+                "name": "QP - 43",
+                "paper": "qp_43",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_43.pdf"
+            },
+            {
+                "name": "MS - 43",
+                "paper": "ms_43",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_43.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 5",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 51",
+                "paper": "qp_51",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_51.pdf"
+            },
+            {
+                "name": "MS - 51",
+                "paper": "ms_51",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_51.pdf"
+            },
+            {
+                "name": "QP - 52",
+                "paper": "qp_52",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_52.pdf"
+            },
+            {
+                "name": "MS - 52",
+                "paper": "ms_52",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_52.pdf"
+            },
+            {
+                "name": "QP - 53",
+                "paper": "qp_53",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_53.pdf"
+            },
+            {
+                "name": "MS - 53",
+                "paper": "ms_53",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_53.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 6",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 61",
+                "paper": "qp_61",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_61.pdf"
+            },
+            {
+                "name": "MS - 61",
+                "paper": "ms_61",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_61.pdf"
+            },
+            {
+                "name": "QP - 62",
+                "paper": "qp_62",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_62.pdf"
+            },
+            {
+                "name": "MS - 62",
+                "paper": "ms_62",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_62.pdf"
+            },
+            {
+                "name": "QP - 63",
+                "paper": "qp_63",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_qp_63.pdf"
+            },
+            {
+                "name": "MS - 63",
+                "paper": "ms_63",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2021/9709_w21_ms_63.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Grade Threshold",
+        "cols": 1,
+        "pdf_files": [
+            {
+                "name": "Grade Threshold",
+                "paper": "qp_31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/mathematics-9709/2023/9709_w21_gt.pdf"
+            }
+        ]
+    }
+]

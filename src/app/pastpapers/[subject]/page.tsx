@@ -8,8 +8,6 @@ export async function generateStaticParams() {
       return paper.href.split("/")[2];
     })
   );
-  console.log(hrefs);
-
   return hrefs.map((href) => {
     return {
       subject: href,
