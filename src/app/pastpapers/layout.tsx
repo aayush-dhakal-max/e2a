@@ -8,12 +8,10 @@ export const metadata: Metadata = {
   description: "Past papers for A Level students. Get access to past papers for A Level subjects.",
 };
 
-const inter = Inter({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-inter" });
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className={inter.className}>{children}</div>;
+  return <div className={teko2.className}>{children}</div>;
 }
