@@ -49,10 +49,11 @@ export function Hero() {
         </div>
         <div className="md:h-1/2">
           <Image
-            alt="Students laughing"
+            alt="Hero Image"
             className="mx-auto"
             height="300"
             src="/about.svg"
+            priority
             style={{
               aspectRatio: "850/300",
               objectFit: "cover",

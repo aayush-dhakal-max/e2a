@@ -1,7 +1,6 @@
 import Navbar from "@/components/component/Navbar";
 import { teko2 } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Past Papers for A Level Students",

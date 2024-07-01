@@ -50,10 +50,11 @@ const Navbar = () => {
           <div className="w-28 h-12"></div>
           <Link href={"/"}>
             <Image
-              alt="Students laughing"
+              alt="E2A logo"
               className="mx-auto rounded-lg"
               height="60"
               src="/logo.svg"
+              priority
               style={{
                 aspectRatio: "120/60",
                 objectFit: "cover",
@@ -115,10 +116,11 @@ const Navbar = () => {
           <div className="flex items-center justify-center h-full">
             <Link href={"/"}>
               <Image
-                alt="Students laughing"
+                alt="E2A logo"
                 className="pt-1 -ml-6 m-auto z-50"
                 height="70"
                 src="/logo.svg"
+                priority
                 style={{
                   aspectRatio: "140/70",
                   objectFit: "cover",

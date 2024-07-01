@@ -107,6 +107,16 @@ export default function SubjectPastPaper({ paperpath }: any) {
       <div className={`rounded-lg overflow-hidden md:block hidden`}>
         <ScrollArea className="h-[calc(100vh-160px)] drop-shadow-lg border-black rounded-lg">
           <div className="p-4 space-y-3 bg-gray-0">
+            {/* View full screen button */}
+            <Button className="text-2xl pb-1" variant={"link"}>
+              {PdfLink ? (
+                <Link href={PdfLink} target="_blank">
+                  View in Full Screen
+                </Link>
+              ) : (
+                <Link href={"#"}>View in Full Screen</Link>
+              )}
+            </Button>
             {papers.map((paper: any, index: any) => (
               <Collapsible
                 key={index}
@@ -161,8 +171,9 @@ export default function SubjectPastPaper({ paperpath }: any) {
           </div>
         </ScrollArea>
       </div>
+
+      {/* PDF viewer screen */}
       <div className="bg-gray-100 rounded-lg md:block hidden overflow-hidden w-full">
-        {/* <h1 className="z-50 text-7xl">Open a paper to view</h1> */}
         <div className="h-[82svh] w-full">
           <iframe
             src={`${PdfLink}`}
