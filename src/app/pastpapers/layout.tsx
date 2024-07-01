@@ -1,11 +1,10 @@
-import Navbar from "@/components/component/Navbar";
 import type { Metadata } from "next";
 import { teko2 } from "@/lib/utils";
-import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "A Levels Past Papers",
-  description: "Past papers for A Level students. Get access to past papers for A Level subjects.",
+  title: "Past Papers | A Level | E2A Learning Nepal",
+  description:
+    "Past papers for A Level students. Download and view past papers for free at E2A Learning Nepal. Perfect for students and teachers looking to prepare for upcoming exams.",
 };
 
 export default function RootLayout({

@@ -6,9 +6,9 @@ import "./globals.css";
 const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
 
 export const metadata: Metadata = {
-  title: "E2A Nepal",
+  title: "E2A Learning Nepal | A Level Tuition in Nepal",
   description:
-    "Empowering A-Level students with expert guidance, comprehensive resources, and a path to academic excellence.",
+    "E2A Learning Nepal is a leading A Level tuition provider in Nepal. We offer A Level classes for students in Nepal. Our A Level tuition classes are designed to help students achieve their academic goals. Enroll now!",
 };
 
 export default function RootLayout({
