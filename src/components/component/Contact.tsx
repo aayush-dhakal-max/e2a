@@ -37,7 +37,7 @@ export default function Component() {
   };
   return (
     <>
-      <section id="about" className={`py-12 md:py-16 lg:py-20 ${teko2.className}`}>
+      <section className={`py-12 md:py-16 lg:py-20 ${teko2.className}`}>
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
@@ -145,7 +145,7 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <section className={`bg-gray-50 py-12 md:py-16 lg:py-20 text-xl ${teko2.className}`}>
+      <section id="contact" className={`bg-gray-50 py-12 md:py-16 lg:py-20 text-xl ${teko2.className}`}>
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>

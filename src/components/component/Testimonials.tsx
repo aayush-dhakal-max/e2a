@@ -11,26 +11,26 @@ const testimonials = [
   {
     quote:
       "I had a decent concept of every topic by the end of course, thanks to Rikesh Sir's effective and interactive teaching. Frequent tests and feedback were very helpful.",
-    name: "John Doe",
-    avatarFallback: "JD",
+    name: "Neha Sherpa",
+    avatarFallback: "NS",
   },
   {
     quote:
       "It helped me understand maths and not just rot learn the subject. I actually liked doing maths at the end because I knew how to do alot of questions. This course is excellent for students who want to improve their grades drastically. With full effort from both the sides, A* seemed like an easy goal.",
-    name: "Jane Appleseed",
-    avatarFallback: "JA",
+    name: "Darshana Bhandari",
+    avatarFallback: "DB",
   },
   {
     quote:
-      "Even though a tutor typically just focuses on the syllabus content, my teacher here at e2a was an enthusiast for cybersecurity and  programming, who not only taught us the course contents but also sparked an interest for vast possibilities in the realm of computer science. Due to his knowledge and experience, he was able to share and simplify all the topics of CS(9618) which made them easy to understand. Also the company I was exposed to in e2a has been one of the most welcoming environment I had ever encountered.",
-    name: "Tom Smith",
-    avatarFallback: "TS",
+      "Even though a tutor typically just focuses on the syllabus content, my teacher here at E2A was an enthusiast for cybersecurity and programming, who not only taught us the course contents but also sparked an interest for vast possibilities in the realm of computer science. Due to his knowledge and experience, he was able to share and simplify all the topics of CS(9618) which made them easy to understand. Also the company I was exposed to in E2A has been one of the most welcoming environment I had ever encountered.",
+    name: "Abijeet Amatya",
+    avatarFallback: "AA",
   },
   {
     quote:
       "I had a great experience at E2A. The classes were interactive and encouraging. The small class size meant a lot of one-on-one time with the tutors, helping me grasp difficult content.",
-    name: "Tom Smith",
-    avatarFallback: "TS",
+    name: "Jeevan Khadka",
+    avatarFallback: "JK",
   },
 ];
 
@@ -82,7 +82,7 @@ const Testimonials = () => {
                     <CardFooter>
                       <div className="flex items-center space-x-4">
                         <Avatar>
-                          <AvatarImage src="https://i.pravatar.cc/300" />
+                          <AvatarImage src="" />
                           <AvatarFallback>{testimonial.avatarFallback}</AvatarFallback>
                         </Avatar>
                         <div className="text-xl ">

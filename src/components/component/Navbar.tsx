@@ -86,7 +86,7 @@ const Navbar = () => {
             <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
               PAST PAPERS
             </Link>
-            <Link className="text-gray-800 hover:text-gray-600" href="#">
+            <Link className="text-gray-800 hover:text-gray-600" href="/about">
               ABOUT US
             </Link>
             <Link className="text-gray-800 hover:text-gray-600" href="/">
@@ -157,25 +157,25 @@ const Navbar = () => {
               href="/"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
             >
-              Home
+              HOME
             </Link>
             <Link
-              href="/#"
+              href="/about"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
             >
-              About
+              ABOUT
             </Link>
             <Link
               href="/pastpapers"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
             >
-              Past Papers
+              PAST PAPERS
             </Link>
             <Link
               href="/#"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
             >
-              Contact
+              CONTACT
             </Link>
             <div className="flex space-x-4 px-3 py-5">
               <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
