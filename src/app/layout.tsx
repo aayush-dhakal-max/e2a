@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Libre_Franklin, Inter, Poppins, Teko } from "next/font/google";
+import { Teko } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={teko.className}>
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
