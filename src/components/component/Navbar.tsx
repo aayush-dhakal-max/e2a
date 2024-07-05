@@ -154,7 +154,7 @@ const Navbar = () => {
               : "opacity-0 transform max-h-0 -translate-y-full duration-700"
           } md:hidden transition-all transition-max-height  ease-in-out overflow-hidden`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-3xl">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center text-2xl">
             <Link
               href="/"
               className="text-gray-900 hover:text-[#C60B52] block px-3 py-2 rounded-md font-medium"
@@ -181,16 +181,16 @@ const Navbar = () => {
             </Link>
             <div className="flex space-x-4 px-3 py-5">
               <Link target="_blank" href={"https://www.facebook.com/e2alearningnepal1.0/"}>
-                <FacebookIcon className="h-6 w-6 text-blue-700 hover:text-gray-600" />
+                <FacebookIcon className="h-8 w-8 text-blue-700 hover:text-gray-600" />
               </Link>
               <Link
                 target="_blank"
                 href={"https://www.instagram.com/e2alearningnepal1.0?igsh=MXMxNzJmemw1bTZuNw=="}
               >
-                <FaInstagram className="h-6 w-6 text-[#C60B52] hover:text-gray-600" />
+                <FaInstagram className="h-8 w-8 text-[#C60B52] hover:text-gray-600" />
               </Link>
               <Link target="_blank" href={"https://www.tiktok.com/@e2alearningnepal"}>
-                <FaTiktok className="h-6 w-6 text-blue-900 hover:text-gray-600" />
+                <FaTiktok className="h-8 w-8 text-blue-900 hover:text-gray-600" />
               </Link>
             </div>
           </div>
