@@ -30,7 +30,7 @@ export default function Component() {
       <main
         className={`container mx-auto px-4 py-12 md:px-6 lg:py-16 max-w-[800px] mt-10 md:mt-24 ${teko2.className}`}
       >
-        <h1 className="mb-8 text-4xl font-bold md:tracking-wider tracking-wide md:text-4xl">
+        <h1 className="mb-8 text-3xl font-bold md:tracking-wider tracking-wide md:text-4xl">
           Past <span className="text-[#C60B52]">Exam</span> Papers
         </h1>
         <div className="space-y-6">
@@ -46,7 +46,7 @@ export default function Component() {
                 onClick={() => toggleCollapsible(subjectData.subject)}
               >
                 <div className="flex items-center justify-between space-x-4">
-                  <h2 className="text-2xl font-semibold">{subjectData.subject}</h2>
+                  <h2 className="text-xl font-semibold">{subjectData.subject}</h2>
                   <Button size="sm" variant="ghost">
                     <ChevronDownIcon
                       className={`h-6 w-6 transition-transform ${
@@ -61,7 +61,7 @@ export default function Component() {
                 {subjectData.papers.map((paper, index) => (
                   <Link
                     key={index}
-                    className="rounded-md bg-gray-300 px-3 py-3 text-lg font-medium transition-colors hover:bg-gray-800 hover:text-white"
+                    className="rounded-md bg-gray-300 px-3 py-3 text-md font-medium transition-colors hover:bg-gray-800 hover:text-white"
                     href={paper.href}
                   >
                     {paper.year}

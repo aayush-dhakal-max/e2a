@@ -59,7 +59,7 @@ export default function SubjectPastPaper({ paperpath }: any) {
                   className="hover:cursor-pointer py-2 "
                 >
                   <div className="flex items-center justify-between space-x-4">
-                    <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
+                    <h2 className="text-xl tracking-normal font-semibold">{paper.subject}</h2>
                     <Button size="sm" variant="ghost">
                       <ChevronDownIcon
                         className={`h-6 w-6 transition-transform ${
@@ -85,7 +85,7 @@ export default function SubjectPastPaper({ paperpath }: any) {
                       key={index}
                       href={pdf_file.href}
                       // href={{ query: { paper: pdf_file.paper } }}
-                      className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-xl tracking-wide font-medium transition-colors duration-400 
+                      className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-md tracking-wide font-medium transition-colors duration-400 
                         ${
                           activeLink === pdf_file.name
                             ? "bg-gray-800 text-white"
@@ -108,7 +108,7 @@ export default function SubjectPastPaper({ paperpath }: any) {
         <ScrollArea className="h-[calc(100vh-160px)] drop-shadow-lg border-black rounded-lg">
           <div className="p-4 space-y-3 bg-gray-0">
             {/* View full screen button */}
-            <Button className="text-2xl pb-1" variant={"link"}>
+            <Button className="text-md" variant={"default"}>
               {PdfLink ? (
                 <Link href={PdfLink} target="_blank">
                   View in Full Screen
@@ -129,7 +129,7 @@ export default function SubjectPastPaper({ paperpath }: any) {
                   className="hover:cursor-pointer py-2 "
                 >
                   <div className="flex items-center justify-between space-x-4">
-                    <h2 className="text-2xl tracking-normal font-semibold">{paper.subject}</h2>
+                    <h2 className="text-xl tracking-normal font-semibold">{paper.subject}</h2>
                     <Button size="sm" variant="ghost">
                       <ChevronDownIcon
                         className={`h-6 w-6 transition-transform ${
@@ -154,7 +154,7 @@ export default function SubjectPastPaper({ paperpath }: any) {
                       key={pdf_file.name}
                       href={"#"}
                       //   href={{ query: { paper: pdf_file.paper } }}
-                      className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-xl tracking-wide font-medium transition-colors duration-400 
+                      className={`block w-full bg-gray-300 rounded-md px-3 py-2 pt-3 text-md tracking-wide font-medium transition-colors duration-400 
                         ${
                           activeLink === pdf_file.name
                             ? "bg-gray-800 text-white"

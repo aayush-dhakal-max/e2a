@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Teko } from "next/font/google";
+import { teko2 } from "@/lib/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-
-const teko = Teko({ display: "swap", subsets: ["latin"], weight: "400", variable: "--font-teko" });
 
 export const metadata: Metadata = {
   title: "E2A Learning Nepal | A Level Tuition in Nepal",
@@ -19,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={teko.className}>
+      <body className={teko2.className}>
         {children}
         <SpeedInsights />
         <Analytics />

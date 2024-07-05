@@ -43,12 +43,10 @@ const Testimonials = () => {
       <div className="container px-4 md:px-16">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h2
-              className={`text-4xl font-bold  tracking-wide md:tracking-wider sm:text-4xl md:text-5xl text-[#C60B52] `}
-            >
+            <h2 className={`text-3xl font-bold  tracking-wide md:tracking-wider md:text-4xl text-[#C60B52] `}>
               What Our Students Say
             </h2>
-            <p className="max-w-[700px] mx-auto text-[#001942] md:text-xl dark:text-gray-400">
+            <p className="max-w-[700px] mx-auto text-[#001942] md:text-xl text-lg dark:text-gray-400">
               Hear from our satisfied students about their experience with our A-level courses.
             </p>
           </div>
@@ -73,7 +71,7 @@ const Testimonials = () => {
                   >
                     <CardContent>
                       <ScrollArea className="h-28">
-                        <blockquote className="text-xl leading-snug max-h-[220px]">
+                        <blockquote className="text-md leading-snug max-h-[220px]">
                           {testimonial.quote}
                         </blockquote>
                         <ScrollBar />
@@ -85,7 +83,7 @@ const Testimonials = () => {
                           <AvatarImage src="" />
                           <AvatarFallback>{testimonial.avatarFallback}</AvatarFallback>
                         </Avatar>
-                        <div className="text-xl ">
+                        <div className="text-md font-bold ">
                           <div className="">{testimonial.name}</div>
                           <div className="text-sm text-gray-500 dark:text-gray-400">A-level Student</div>
                         </div>

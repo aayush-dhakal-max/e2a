@@ -41,42 +41,42 @@ export default function Component() {
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-4xl text-[#001942] font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl text-[#001942] font-bold tracking-normal md:tracking-wider md:text-4xl">
                 A-Level Tuition at <span className="text-[#001942]">E</span>
                 <span className="text-[#C60B52]">2</span>
                 <span className="text-[#001942]">A</span>
               </h2>
-              <p className="mt-4 text-gray-500 text-xl md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="mt-4 text-gray-500 text-lg md:text-lg">
                 Our A-Level tuition institute offers comprehensive and personalized support to help students
                 excel in their A-Level examinations. With experienced teachers, small class sizes, and a focus
                 on individualized learning, we are committed to guiding our students to academic success.
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start">
-                  <CheckIcon className=" mr-2 mt-1 h-4 w-4" />
+                  <CheckIcon className=" mr-2 mt-1 h-8 w-8" />
                   <div>
-                    <h3 className="text-xl font-medium tracking-wide">Experienced Teachers</h3>
-                    <p className="text-gray-500 text-xl dark:text-gray-400">
+                    <h3 className="text-xl font-bold tracking-wide">Experienced Teachers</h3>
+                    <p className="text-gray-500 text-lg dark:text-gray-400">
                       Our team of highly qualified and experienced teachers are dedicated to providing
                       exceptional instruction and support.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckIcon className="mr-2 mt-1 h-4 w-4" />
+                  <CheckIcon className="mr-2 mt-1 h-8 w-8" />
                   <div>
-                    <h3 className="text-xl font-medium">Small Class Sizes</h3>
-                    <p className="text-gray-500 text-xl dark:text-gray-400">
+                    <h3 className="text-xl font-bold">Small Class Sizes</h3>
+                    <p className="text-gray-500 text-lg dark:text-gray-400">
                       We maintain small class sizes to ensure personalized attention and a collaborative
                       learning environment.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckIcon className="mr-2 mt-1 h-4 w-4" />
+                  <CheckIcon className="mr-2 mt-1 h-8 w-8" />
                   <div>
-                    <h3 className="text-xl font-medium">Personalized Learning</h3>
-                    <p className="text-gray-500 text-xl dark:text-gray-400">
+                    <h3 className="text-xl font-bold">Personalized Learning</h3>
+                    <p className="text-gray-500 text-lg dark:text-gray-400">
                       Our tailored approach to learning helps students overcome their unique challenges and
                       reach their full potential.
                     </p>
@@ -85,13 +85,13 @@ export default function Component() {
               </ul>
             </div>
             <div>
-              <h2 className="text-4xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl text-[#C60B52]">
+              <h2 className="text-3xl font-bold tracking-normal md:tracking-wider md:text-4xl text-[#C60B52]">
                 Get in Touch
               </h2>
               <form onSubmit={sendMail} className="mt-4 space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label className="text-xl" htmlFor="name">
+                    <Label className="text-lg font-semibold" htmlFor="name">
                       Name
                     </Label>
                     <Input
@@ -102,11 +102,11 @@ export default function Component() {
                       }}
                       id="name"
                       placeholder="Enter your name"
-                      className="text-xl"
+                      className="text-lg"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label className="text-xl" htmlFor="email">
+                    <Label className="text-lg font-semibold" htmlFor="email">
                       Email
                     </Label>
                     <Input
@@ -118,12 +118,12 @@ export default function Component() {
                       id="email"
                       placeholder="Enter your email"
                       type="email"
-                      className="text-xl"
+                      className="text-lg"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label className="text-xl" htmlFor="message">
+                  <Label className="text-lg font-semibold" htmlFor="message">
                     Message
                   </Label>
                   <Textarea
@@ -132,12 +132,12 @@ export default function Component() {
                     onChange={(e) => {
                       setMessage(e.target.value);
                     }}
-                    className="min-h-[120px] text-xl"
+                    className="min-h-[120px] text-lg"
                     id="message"
                     placeholder="Enter your message"
                   />
                 </div>
-                <Button className="text-xl" type="submit">
+                <Button className="text-lg" type="submit">
                   Send Message
                 </Button>
               </form>
@@ -149,26 +149,31 @@ export default function Component() {
         <div className="container px-4 md:px-16">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
-                Contact Us
-              </h2>
+              <h2 className="text-3xl font-bold tracking-normal md:tracking-wider md:text-4xl">Contact Us</h2>
               <div className="mt-4 space-y-4 text-gray-500 ">
                 <div>
-                  <h3 className="font-semibold text-gray-900">Address</h3>
-                  <p className="flex items-center gap-1">
-                    <SewingPinFilledIcon /> Pulchowk, Jhamsikhel Marg, Lalitpur 44600
+                  <h3 className="font-semibold text-gray-900 text-lg">Address</h3>
+                  <p className="flex items-center gap-1 text-lg">
+                    <SewingPinFilledIcon className="h-6 w-6" />
+                    Pulchowk, Jhamsikhel Marg, Lalitpur 44600
+                  </p>
+                  <p className="flex items-center gap-1 text-lg">
+                    <SewingPinFilledIcon className="h-6 w-6" /> Kupondole, Jwagal Galli, Lalitpur 44600
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Phone</h3>
-                  <Link className="hover:text-gray-800 flex items-center gap-1" href={"tel:9866551435"}>
+                  <h3 className="font-semibold text-gray-900 text-lg">Phone</h3>
+                  <Link
+                    className="hover:text-gray-800 flex items-center gap-1 text-lg"
+                    href={"tel:9866551435"}
+                  >
                     <MobileIcon /> 9866551435
                   </Link>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Mail address</h3>
+                  <h3 className="font-semibold text-gray-900 text-lg">Mail address</h3>
                   <Link
-                    className="hover:text-gray-800 flex items-center gap-2"
+                    className="hover:text-gray-800 flex items-center text-lg gap-2"
                     href={"mailto:e2alearningnepal@gmail.com"}
                   >
                     <EnvelopeClosedIcon />
@@ -176,15 +181,15 @@ export default function Component() {
                   </Link>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Hours</h3>
-                  <p>Sunday - Friday: 9am - 6pm</p>
+                  <h3 className="font-semibold text-gray-900 text-lg">Hours</h3>
+                  <p className="text-lg">Sunday - Friday: 9am - 6pm</p>
                 </div>
               </div>
             </div>
             <div className="rounded-lg bg-white p-2 shadow-md">
-              <h3 className="text-4xl md:text-4xl font-bold tracking-normal md:tracking-wider">
+              {/* <h3 className="text-3xl md:text-4xl font-bold tracking-normal md:tracking-wider">
                 Find Us on Map
-              </h3>
+              </h3> */}
               <div className="mt-1 aspect-video overflow-hidden rounded-lg">
                 <iframe
                   title="Google Maps"

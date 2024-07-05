@@ -32,10 +32,10 @@ const OurServices = () => {
       <div className="container px-4 md:px-16">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h2 className="text-4xl font-bold tracking-normal md:tracking-wider sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-normal md:tracking-wider sm:text-3xl md:text-4xl">
               Our Services
             </h2>
-            <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl text-xl dark:text-gray-400">
+            <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl text-lg dark:text-gray-400">
               Explore our range of A-level tuition services and resources to help you excel in your exams.
             </p>
           </div>
@@ -43,14 +43,14 @@ const OurServices = () => {
             {courses.map((course) => (
               <Card className="" key={course.title}>
                 <CardHeader>
-                  <CardTitle className="text-2xl tracking-normal">{course.title}</CardTitle>
+                  <CardTitle className="text-xl tracking-normal">{course.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-500 text-xl">{course.description}</p>
+                  <p className="text-gray-500 text-md md:text-lg">{course.description}</p>
                 </CardContent>
                 <CardFooter>
                   <Link
-                    className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-base font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                     href="#"
                   >
                     {course.link_text}
