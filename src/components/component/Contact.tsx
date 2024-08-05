@@ -7,6 +7,8 @@ import { useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
 import { teko2 } from "@/lib/utils";
+import { Separator } from "../ui/separator";
+import Reveal, { HorizontalReveal } from "./Reveal";
 
 export default function Component() {
   const [name, setName] = useState("");
@@ -53,33 +55,45 @@ export default function Component() {
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start">
-                  <CheckIcon className=" mr-2 mt-1 h-8 w-8" />
+                  <Reveal>
+                    <CheckIcon className="mr-2 mt-1 md:h-6 md:w-6 h-6 w-4" />
+                  </Reveal>
                   <div>
-                    <h3 className="text-xl font-bold tracking-wide">Experienced Teachers</h3>
-                    <p className="text-gray-500 text-lg dark:text-gray-400">
-                      Our team of highly qualified and experienced teachers are dedicated to providing
-                      exceptional instruction and support.
-                    </p>
+                    <HorizontalReveal>
+                      <h3 className="text-xl font-bold tracking-wide">Experienced Teachers</h3>
+                      <p className="text-gray-500 text-lg dark:text-gray-400">
+                        Our team of highly qualified and experienced teachers are dedicated to providing
+                        exceptional instruction and support.
+                      </p>
+                    </HorizontalReveal>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckIcon className="mr-2 mt-1 h-8 w-8" />
+                  <Reveal>
+                    <CheckIcon className="mr-2 mt-1 md:h-6 md:w-6 h-6 w-4" />
+                  </Reveal>
                   <div>
-                    <h3 className="text-xl font-bold">Small Class Sizes</h3>
-                    <p className="text-gray-500 text-lg dark:text-gray-400">
-                      We maintain small class sizes to ensure personalized attention and a collaborative
-                      learning environment.
-                    </p>
+                    <HorizontalReveal>
+                      <h3 className="text-xl font-bold">Small Class Sizes</h3>
+                      <p className="text-gray-500 text-lg dark:text-gray-400">
+                        We maintain small class sizes to ensure personalized attention and a collaborative
+                        learning environment.
+                      </p>
+                    </HorizontalReveal>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckIcon className="mr-2 mt-1 h-8 w-8" />
+                  <Reveal>
+                    <CheckIcon className="mr-2 mt-1 md:h-6 md:w-6 h-6 w-4" />
+                  </Reveal>
                   <div>
-                    <h3 className="text-xl font-bold">Personalized Learning</h3>
-                    <p className="text-gray-500 text-lg dark:text-gray-400">
-                      Our tailored approach to learning helps students overcome their unique challenges and
-                      reach their full potential.
-                    </p>
+                    <HorizontalReveal>
+                      <h3 className="text-xl font-bold">Personalized Learning</h3>
+                      <p className="text-gray-500 text-lg dark:text-gray-400">
+                        Our tailored approach to learning helps students overcome their unique challenges and
+                        reach their full potential.
+                      </p>
+                    </HorizontalReveal>
                   </div>
                 </li>
               </ul>
@@ -90,56 +104,64 @@ export default function Component() {
               </h2>
               <form onSubmit={sendMail} className="mt-4 space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <HorizontalReveal>
+                    <div className="space-y-2">
+                      <Label className="text-lg font-semibold" htmlFor="name">
+                        Name
+                      </Label>
+                      <Input
+                        required
+                        value={name}
+                        onChange={(e) => {
+                          setName(e.target.value);
+                        }}
+                        id="name"
+                        placeholder="Enter your name"
+                        className="text-lg"
+                      />
+                    </div>
+                  </HorizontalReveal>
+                  <HorizontalReveal>
+                    <div className="space-y-2">
+                      <Label className="text-lg font-semibold" htmlFor="email">
+                        Email
+                      </Label>
+                      <Input
+                        required
+                        value={sender}
+                        onChange={(e) => {
+                          setSender(e.target.value);
+                        }}
+                        id="email"
+                        placeholder="Enter your email"
+                        type="email"
+                        className="text-lg"
+                      />
+                    </div>
+                  </HorizontalReveal>
+                </div>
+                <HorizontalReveal>
                   <div className="space-y-2">
-                    <Label className="text-lg font-semibold" htmlFor="name">
-                      Name
+                    <Label className="text-lg font-semibold" htmlFor="message">
+                      Message
                     </Label>
-                    <Input
+                    <Textarea
                       required
-                      value={name}
+                      value={message}
                       onChange={(e) => {
-                        setName(e.target.value);
+                        setMessage(e.target.value);
                       }}
-                      id="name"
-                      placeholder="Enter your name"
-                      className="text-lg"
+                      className="min-h-[120px] text-lg"
+                      id="message"
+                      placeholder="Enter your message"
                     />
                   </div>
-                  <div className="space-y-2">
-                    <Label className="text-lg font-semibold" htmlFor="email">
-                      Email
-                    </Label>
-                    <Input
-                      required
-                      value={sender}
-                      onChange={(e) => {
-                        setSender(e.target.value);
-                      }}
-                      id="email"
-                      placeholder="Enter your email"
-                      type="email"
-                      className="text-lg"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label className="text-lg font-semibold" htmlFor="message">
-                    Message
-                  </Label>
-                  <Textarea
-                    required
-                    value={message}
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                    }}
-                    className="min-h-[120px] text-lg"
-                    id="message"
-                    placeholder="Enter your message"
-                  />
-                </div>
-                <Button className="text-lg" type="submit">
-                  Send Message
-                </Button>
+                </HorizontalReveal>
+                <HorizontalReveal>
+                  <Button className="text-lg" type="submit">
+                    Send Message
+                  </Button>
+                </HorizontalReveal>
               </form>
             </div>
           </div>
@@ -182,11 +204,18 @@ export default function Component() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 text-lg">Hours</h3>
-                  <p className="text-lg">Sunday - Friday: 9am - 6pm</p>
+                  <p className="text-lg">Sunday - Friday : 9am - 6pm</p>
                 </div>
               </div>
+              <Separator className="bg-gray-400 my-2" />
+              <div className="text-gray-500 mt-2 tracking-tighter text-[16px]">
+                E2A Learning Nepal, your premier A-Level tuition center in Kathmandu and Lalitpur, offers
+                expert A-Level tuition, affordable courses, and comprehensive past papers. Our personalized
+                learning approach and experienced tutors ensure your academic success. Join us for the best
+                A-Level education in Nepal.
+              </div>
             </div>
-            <div className="rounded-lg bg-white p-2 shadow-md">
+            <div className="rounded-lg h-fit bg-white p-2 shadow-md">
               {/* <h3 className="text-3xl md:text-4xl font-bold tracking-normal md:tracking-wider">
                 Find Us on Map
               </h3> */}
@@ -197,7 +226,7 @@ export default function Component() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2645232799005!2d85.31198767525271!3d27.67821807619923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ef1dbb9b8d%3A0x1a26f16a81a0e6e7!2sE2A%20Learning%20Nepal!5e0!3m2!1sen!2snp!4v1706521624603!5m2!1sen!2snp"
                   width="100%"
                   height="100%"
-                  style={{ border: "0" }}
+                  style={{ border: "1" }}
                   allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

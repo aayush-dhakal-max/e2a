@@ -84,13 +84,22 @@ const Navbar = () => {
         >
           <div className=" md:space-x-6 lg:space-x-6 xl:space-x-10 text-xl font-bold ">
             {/* mt-1 */}
-            <Link className="text-gray-800 hover:text-gray-600" href="../pastpapers">
+            <Link
+              className="text-gray-800 hover:bg-gray-800 hover:text-gray-100 transition-colors duration-300 px-2 rounded-full"
+              href="../pastpapers"
+            >
               PAST PAPERS
             </Link>
-            <Link className="text-gray-800 hover:text-gray-600" href="/about">
+            <Link
+              className=" text-gray-800 hover:bg-gray-800 hover:text-gray-100 transition-colors duration-300 px-2 rounded-full"
+              href="/about"
+            >
               ABOUT US
             </Link>
-            <Link className="text-gray-800 hover:text-gray-600" href="/">
+            <Link
+              className="text-gray-800 hover:bg-gray-800 hover:text-gray-100 transition-colors duration-300 px-2 rounded-full"
+              href="/"
+            >
               HOME
             </Link>
           </div>
