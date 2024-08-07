@@ -28,7 +28,6 @@ export default function RootLayout({ children }: any) {
     sameAs: [
       "https://www.facebook.com/e2alearningnepal1.0/",
       "https://www.instagram.com/e2alearningnepal1.0",
-      "https://e2alearning.com/.com",
     ],
   };
 
