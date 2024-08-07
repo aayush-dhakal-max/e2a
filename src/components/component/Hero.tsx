@@ -36,8 +36,7 @@ export function Hero() {
                 Past Papers
               </Link>
               <Link
-                target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
+                href="/enroll"
                 className={`md:hidden inline-flex items-center justify-center bg-[#C60B52] text-white text-lg py-2 px-3
                  rounded-full shadow-md hover:bg-[#591f35] focus:outline-none ${teko2.className}`}
                 prefetch={false}
@@ -51,6 +50,7 @@ export function Hero() {
           <div className="md:h-1/2">
             <Image
               alt="Hero Image"
+              title="Hero Image"
               className="mx-auto"
               height="300"
               src="/about.svg"

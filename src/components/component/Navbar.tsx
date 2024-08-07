@@ -29,8 +29,7 @@ const Navbar = () => {
       {/* <AlertDialog>
         <AlertDialogTrigger asChild> */}
       <Link
-        target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
+        href="/enroll"
         className={`${isScrolled ? "block" : "hidden"} md:hidden text-md shadow-black outline-1 ${
           teko2.className
         } z-40 fixed bottom-5 right-5 bg-[#C60B52] text-white py-2 px-4 rounded-full shadow-md hover:bg-[#591f35] transition-all duration-900 animate-bounce`}
@@ -53,6 +52,7 @@ const Navbar = () => {
               alt="E2A logo"
               className="mx-auto rounded-lg"
               height="60"
+              title="E2A logo"
               src="/logo.svg"
               priority
               style={{
@@ -105,13 +105,9 @@ const Navbar = () => {
           </div>
           {/* <AlertDialog>
             <AlertDialogTrigger asChild> */}
-          <div className=" bg-[#C60B52] text-white px-3 py-1  rounded-3xl text-xl font-bold hover:cursor-pointer transition-all duration-900">
+          <div className=" bg-[#C60B52] text-white px-3 py-1 rounded-3xl text-xl font-bold hover:cursor-pointer hover:scale-105 hover:-translate-x-0.5 transition-all duration-500">
             {/* pt-2 */}
-            <Link
-              className=""
-              target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
-            >
+            <Link className="" href="/enroll">
               Enroll Now
             </Link>
           </div>
@@ -130,6 +126,7 @@ const Navbar = () => {
                 alt="E2A logo"
                 className="pt-1 -ml-6 m-auto z-50"
                 height="70"
+                title="E2A logo"
                 src="/logo.svg"
                 priority
                 style={{

@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// The senderMail is acutally the phone number of the sender
 export async function POST(request: NextRequest) {
   try {
-    const { senderMail, name, subject, message } = await request.json();
+    const { asLevelIsChecked, a2LevelIsChecked, name, phone, email } = await request.json();
+    let enrolledFor = "";
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -17,10 +17,20 @@ export async function POST(request: NextRequest) {
       },
     });
 
+    if (asLevelIsChecked) {
+      enrolledFor = "AS Level";
+    } else if (a2LevelIsChecked) {
+      enrolledFor = "A2 Level";
+    } else if (asLevelIsChecked && a2LevelIsChecked) {
+      enrolledFor = "AS Level, A2 Level";
+    } else {
+      enrolledFor = "None";
+    }
+
     const mailOption = {
-      from: "E2A Tuition Website",
+      from: "E2A Website Enroll Page",
       to: process.env.NEXT_PRIVATE_RECEIVER,
-      subject: "Student Enquiry from E2A Tuition Website",
+      subject: "Student Enrollment Form",
       html: `
         <html>
           <head>
@@ -60,16 +70,16 @@ export async function POST(request: NextRequest) {
           <body>
             <div class="container">
               <div class="content">
-                <h2>Student Enquiry</h2>
+                <h1>Student Enrollment</h1>
                 <ul>
-                  <li><strong>Name:</strong> ${name}</li>
-                  <li><strong>Phone Number:</strong> ${senderMail}</li>
-                  <li><strong>Title:</strong> ${subject}</li>
-                  <li><strong>Message:</strong> ${message}</li>
+                  <li><strong>Name : </strong> ${name}</li>
+                  <li><strong>Phone Number : </strong> ${phone}</li>
+                  <li><strong>Email : </strong> ${email}</li>
+                  <li><strong>Enrolled For : </strong> ${enrolledFor}</li>
                 </ul>
               </div>
               <div class="footer">
-                <p>This message was sent from the E2A Tuition website.</p>
+                <p>This message was sent from the E2A Tuition website enroll page.</p>
               </div>
             </div>
           </body>
@@ -79,8 +89,8 @@ export async function POST(request: NextRequest) {
 
     await transporter.sendMail(mailOption);
 
-    return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 });
+    return NextResponse.json({ message: "Enroll Form Submitted Successfully" }, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ message: "Failed to Send Email", error }, { status: 500 });
+    return NextResponse.json({ message: "Failed to Send Form", error }, { status: 500 });
   }
 }

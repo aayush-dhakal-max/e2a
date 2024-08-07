@@ -67,7 +67,7 @@ export const RevealFromLeft = ({ children }: any) => {
   const mainControls = useAnimation();
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="overflow-hidden">
       <motion.div
         variants={{
           hidden: { opacity: 0, x: -50 },
@@ -94,7 +94,7 @@ export const RevealFromRight = ({ children }: any) => {
   const mainControls = useAnimation();
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="overflow-hidden">
       <motion.div
         variants={{
           hidden: { opacity: 0, x: 50 },

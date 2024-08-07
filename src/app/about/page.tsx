@@ -2,14 +2,13 @@
 import Navbar from "@/components/component/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useAnimation, useInView } from "framer-motion";
 import { RevealFromLeft, RevealFromRight } from "@/components/component/Reveal";
 
 export default function Component() {
   return (
     <div className="w-full">
       <Navbar />
-      <motion.div>
+      <div>
         <section className="w-full py-12 md:py-24 lg:py-32 tracking-wide ">
           <div className="container px-4 md:px-16">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
@@ -136,7 +135,7 @@ export default function Component() {
                   </p>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">
                     <Link
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSeUrUaxgyKXyxQus9wz_fz-VHIweQjEE_754oFsLRfx5VNmtQ/viewform"
+                      href="/enroll"
                       target="_blank"
                       className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-lg font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
@@ -165,7 +164,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-      </motion.div>
+      </div>
     </div>
   );
 }

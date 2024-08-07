@@ -124,7 +124,7 @@ export default function Component() {
                   <HorizontalReveal>
                     <div className="space-y-2">
                       <Label className="text-lg font-semibold" htmlFor="email">
-                        Email
+                        Phone Number
                       </Label>
                       <Input
                         required
@@ -133,8 +133,8 @@ export default function Component() {
                           setSender(e.target.value);
                         }}
                         id="email"
-                        placeholder="Enter your email"
-                        type="email"
+                        placeholder="Enter your phone number"
+                        type="text"
                         className="text-lg"
                       />
                     </div>
