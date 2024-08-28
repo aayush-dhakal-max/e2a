@@ -1,0 +1,93 @@
+[
+    {
+        "subject": "Paper 1",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 12",
+                "paper": "qp_12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_qp_12.pdf"
+            },
+            {
+                "name": "MS - 12",
+                "paper": "ms_12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_ms_12.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 2",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 22",
+                "paper": "qp_22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_qp_22.pdf"
+            },
+            {
+                "name": "MS - 22",
+                "paper": "ms_22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_ms_22.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 3",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 33",
+                "paper": "qp_33",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_qp_33.pdf"
+            },
+            {
+                "name": "MS - 33",
+                "paper": "ms_33",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_ms_33.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 4",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 42",
+                "paper": "qp_42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_qp_42.pdf"
+            },
+            {
+                "name": "MS - 42",
+                "paper": "ms_42",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_ms_42.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 5",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 52",
+                "paper": "qp_52",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_qp_52.pdf"
+            },
+            {
+                "name": "MS - 52",
+                "paper": "ms_52",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2018/9702_m18_ms_52.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Grade Threshold",
+        "cols": 1,
+        "pdf_files": [
+            {
+                "name": "Grade Threshold",
+                "paper": "qp_31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/physics-9702/2023/9702_m18_gt.pdf"
+            }
+        ]
+    }
+]

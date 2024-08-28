@@ -109,16 +109,6 @@
                 "name": "MS - 32",
                 "paper": "ms_32",
                 "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_32.pdf"
-            },
-            {
-                "name": "QP - 33",
-                "paper": "qp_33",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_33.pdf"
-            },
-            {
-                "name": "MS - 33",
-                "paper": "ms_33",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_33.pdf"
             }
         ]
     },
@@ -139,7 +129,7 @@
             {
                 "name": "SF - 41",
                 "paper": "sf_41",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_41.pdf"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_41.zip"
             },
             {
                 "name": "QP - 42",
@@ -154,22 +144,7 @@
             {
                 "name": "SF - 42",
                 "paper": "sf_42",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_42.pdf"
-            },
-            {
-                "name": "QP - 43",
-                "paper": "qp_43",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_qp_43.pdf"
-            },
-            {
-                "name": "MS - 43",
-                "paper": "ms_43",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_ms_43.pdf"
-            },
-            {
-                "name": "SF - 43",
-                "paper": "sf_43",
-                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_43.pdf"
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/computer-science-9618/2021/9618_w21_sf_42.zip"
             }
         ]
     }

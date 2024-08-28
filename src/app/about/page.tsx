@@ -30,7 +30,7 @@ export default function Component() {
               </RevealFromLeft>
               <RevealFromRight>
                 <Image
-                  src="https://generated.vusercontent.net/placeholder.svg"
+                  src="/image-1.jpeg"
                   width="550"
                   height="310"
                   alt="About Us"
@@ -85,7 +85,7 @@ export default function Component() {
               </RevealFromLeft>
               <RevealFromRight>
                 <Image
-                  src="https://generated.vusercontent.net/placeholder.svg"
+                  src="/image-2.jpeg"
                   width="550"
                   height="310"
                   alt="Our Services"
@@ -100,7 +100,7 @@ export default function Component() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <RevealFromLeft>
                 <Image
-                  src="https://generated.vusercontent.net/placeholder.svg"
+                  src="/image-4.jpeg"
                   width="550"
                   height="310"
                   alt="Commitment"
@@ -154,7 +154,7 @@ export default function Component() {
               </RevealFromLeft>
               <RevealFromRight>
                 <Image
-                  src="https://generated.vusercontent.net/placeholder.svg"
+                  src="/image-5.jpeg"
                   width="550"
                   height="310"
                   alt="Join Us"

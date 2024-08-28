@@ -3,16 +3,20 @@ import Navbar from "@/components/component/Navbar";
 import { Button } from "@/components/ui/button";
 import { CollapsibleTrigger, CollapsibleContent, Collapsible } from "@/components/ui/collapsible";
 import Link from "next/link";
-import pastPapersData from "@/data/pastPapersData.json";
+import pastPapersData from "@/data/NEWpastPapersData.json";
 import { teko2 } from "@/lib/utils";
 import { useState } from "react";
 
 export default function Component() {
   const [openCollapsible, setOpenCollapsible] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
+  const [expandedData, setExpandedData] = useState<any>(null);
 
   const toggleCollapsible = (subject: string) => {
     if (openCollapsible) {
       setOpenCollapsible(null);
+      setExpandedData(null);
+      setExpanded(false);
 
       if (openCollapsible !== subject) {
         setTimeout(() => {
@@ -57,16 +61,36 @@ export default function Component() {
                 </div>
               </CollapsibleTrigger>
 
-              <CollapsibleContent className="grid gap-2 grid-cols-2 CollapsibleContent">
-                {subjectData.papers.map((paper, index) => (
-                  <Link
-                    key={index}
-                    className="rounded-md bg-gray-300 px-3 py-3 text-md font-medium transition-colors hover:bg-gray-800 hover:text-white"
-                    href={paper.href}
-                  >
-                    {paper.year}
-                  </Link>
-                ))}
+              <CollapsibleContent className="flex gap-2 h-full w-full">
+                <div className="flex-1 grid grid-cols-1 gap-2">
+                  {subjectData.papers.map((paper, index) => (
+                    <Button
+                      key={index}
+                      variant={"default"}
+                      className="md:w-4/5 w-full px-7 py-6 font-medium text-md hover:bg-primary hover:scale-105 transition-transform"
+                      onClick={() => {
+                        !expandedData && setExpanded(!expanded);
+                        setExpandedData(paper.papers);
+                      }}
+                    >
+                      {paper.yearData}
+                    </Button>
+                  ))}
+                </div>
+
+                {/* Years data */}
+                <div className="flex-1 grid grid-cols-1 gap-2 h-max">
+                  {expanded &&
+                    expandedData.map((paper: any, index: any) => (
+                      <Link
+                        key={index}
+                        className="rounded-md w-full ml-auto bg-gray-300 px-3 py-3 text-md font-medium transition-colors hover:bg-gray-800 hover:text-white"
+                        href={paper.href}
+                      >
+                        {paper.year}
+                      </Link>
+                    ))}
+                </div>
               </CollapsibleContent>
             </Collapsible>
           ))}

@@ -12,7 +12,7 @@ const Reveal = ({ children }: any) => {
   const mainControls = useAnimation();
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="overflow-hidden">
       <motion.div
         ref={ref}
         variants={{
@@ -22,6 +22,7 @@ const Reveal = ({ children }: any) => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.3, staggerChildren: 0.9 }}
+        className="overflow-hidden"
       >
         {children}
       </motion.div>
@@ -40,7 +41,7 @@ export const HorizontalReveal = ({ children }: any) => {
   const mainControls = useAnimation();
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="overflow-hidden">
       <motion.div
         variants={{
           hidden: { opacity: 0, x: -15 },

@@ -69,10 +69,10 @@ const OurServices = () => {
             animate={mainControls}
             variants={fadeInUpAnimation}
             ref={ref}
-            className="grid gap-6 grid-cols-1 items-stretch md:grid-cols-2 lg:grid-cols-3 "
+            className="grid gap-6 grid-cols-1 items-stretch md:grid-cols-2 lg:grid-cols-3 overflow-hidden"
           >
             {courses.map((course) => (
-              <motion.div variants={fadeInUpAnimation} key={course.title}>
+              <motion.div variants={fadeInUpAnimation} key={course.title} className="overflow-hidden">
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-xl tracking-normal">{course.title}</CardTitle>

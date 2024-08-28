@@ -1,0 +1,66 @@
+[
+    {
+        "subject": "Paper 1",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 12",
+                "paper": "qp_12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_qp_12.pdf"
+            },
+            {
+                "name": "MS - 12",
+                "paper": "ms_12",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_ms_12.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 2",
+        "cols": 2,
+        "pdf_files": [
+            {
+                "name": "QP - 22",
+                "paper": "qp_22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_qp_22.pdf"
+            },
+            {
+                "name": "MS - 22",
+                "paper": "ms_22",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_ms_22.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Paper 3",
+        "cols": 3,
+        "pdf_files": [
+            {
+                "name": "QP - 32",
+                "paper": "qp_32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_qp_32.pdf"
+            },
+            {
+                "name": "MS - 32",
+                "paper": "ms_32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_ms_32.pdf"
+            },
+            {
+                "name": "IN - 32",
+                "paper": "in_32",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2018/9706_m18_in_32.pdf"
+            }
+        ]
+    },
+    {
+        "subject": "Grade Threshold",
+        "cols": 1,
+        "pdf_files": [
+            {
+                "name": "Grade Threshold",
+                "paper": "qp_31",
+                "href": "https://past-papers-e2a.s3.ap-south-1.amazonaws.com/accounting-9706/2023/9706_m18_gt.pdf"
+            }
+        ]
+    }
+]
